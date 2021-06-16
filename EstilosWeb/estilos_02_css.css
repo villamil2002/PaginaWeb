@@ -1,0 +1,68 @@
+/*quitan margen y relleno*/
+
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing: border-box;
+}
+
+
+.navegacion{
+  width:1000px;
+  margin:30px auto;
+  background: #fff;
+}
+
+.navegacion ul{
+
+  list-style: none;
+}
+
+  /*el > es para llamar a la etiqueta li del menu*/
+.menu > li{
+ position:  relative;
+  display:  inline-block; 
+}
+
+.menu >li >  a{
+  display: block;
+  padding: 15px 20px;
+  color:#000000;
+  font-family:'open sans';
+  text-decoration:  none;
+}
+
+/*el hover es para darle trascision al pasar el puntero*/
+.menu li a:hover{
+  color: #708090;
+  transition: all .3s;
+}
+
+/* css para el submmenu*/
+.submenu{
+  position: absolute;
+  background: #00008b;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.submenu li a{
+  display: block;
+  width: 110%;
+  padding: 15px;
+  color:#ffc300;
+  font-family: 'open sans';
+  text-decoration:none;
+}
+.menu li:hover .submenu{
+  visibility: visible;
+  opacity: 2;
+}
+
+
+
+
