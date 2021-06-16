@@ -1,3 +1,0 @@
-Proyectoweb/obj/Debug/
-Proyectoweb/bin/
-.vs/
