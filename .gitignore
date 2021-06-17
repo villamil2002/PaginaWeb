@@ -1,5 +1,5 @@
-ProyectoWeb/SistemaVentas/obj/Debug/*
-ProyectoWeb/SistemaVentas/bin/*
-ProyectoWeb/.vs/*
-ProyectoWeb/CapaDatos/obj/Debug/*
-ProyectoWeb/CapaModelo/obj/Debug/*
+ProyectoWeb/SistemaVentas/obj/Debug/
+ProyectoWeb/.vs/
+ProyectoWeb/CapaDatos/obj/Debug/
+ProyectoWeb/CapaModelo/obj/Debug/
+ProyectoWeb/CapaModelo/bin/Debug/

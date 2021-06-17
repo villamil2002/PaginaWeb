@@ -2982,6 +2982,7 @@
     <Content Include="Controlador\rptProductoTienda\rptProductoTienda.js" />
     <Content Include="Controlador\rptVentas\rptVentas.js" />
     <Content Include="Controlador\Utilidades.js" />
+    <Content Include="css\estilo.css" />
     <Content Include="css\IniciarSesion\Styles.css" />
     <Content Include="docCompra.aspx" />
     <Content Include="docVenta.aspx" />
@@ -3000,6 +3001,7 @@
     <Content Include="Global.asax" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
+    <Content Include="PaginaInicio.aspx" />
     <Content Include="rptProductoTienda.aspx" />
     <Content Include="rptVentas.aspx" />
     <Content Include="Web.config" />
@@ -3120,6 +3122,13 @@
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaInicio.aspx.cs">
+      <DependentUpon>PaginaInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaInicio.aspx.designer.cs">
+      <DependentUpon>PaginaInicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaster.Master.cs">
       <DependentUpon>PaginaMaster.Master</DependentUpon>
