@@ -61,10 +61,8 @@ body {font-family: Arial;}
 
 </head>
 <body style="background-color: white";>
+    <a href="Inicio.aspx">Login</a>
     <form id="form1" runat="server">
-        <div>
-            <h1>Hola Mundo</h1>
-        </div>
         
 	    <div class="container" style="background-color: white";>
 
