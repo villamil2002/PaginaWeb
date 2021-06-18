@@ -14,7 +14,7 @@
     
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>LOGIN</title>
 </head>
 <body>
     <div class="registration-form">
@@ -42,5 +42,6 @@
 
     <link href="Assets/Plugins/sweetalert2/sweetalert.css" rel="stylesheet" />
     <script src="Assets/Plugins/sweetalert2/sweetalert.js"></script>
+
 </body>
 </html>

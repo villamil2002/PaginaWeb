@@ -61,15 +61,22 @@ body {font-family: Arial;}
 
 </head>
 <body style="background-color: white";>
-    <a href="Inicio.aspx">Login</a>
-    <form id="form1" runat="server">
+    
+    <div style="padding-right:8%;padding-top:10px; float:right">
+        <button onclick="window.location.href='Inicio.aspx'" class="btn btn-primary">Login</button>
+    </div>  
+    <br/>
+  
+        <form id="form1" runat="server">
+            
         
-	    <div class="container" style="background-color: white";>
+	    <div class="container" style="background-color: white";/>
+  
 
 				<span>VIKINGOS SA</span>
 				<nav>
                     <p>
-                        <img src="img/Logo_Venstore.PNG" align="right" style="width: 10%; height: 20%;"> <h1 style="font-size: 300%">VENSTORE</h1>
+                        <img src="img/Logo_Venstore.PNG" align="right" style="width: 10%; height: 20%;"/> <h1 style="font-size: 300%">VENSTORE</h1>
                     </p>
 				</nav>
 
@@ -129,17 +136,17 @@ body {font-family: Arial;}
     <div class="tab">
       <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
       <label for="tab-3" class="tab-label">Servicios</label>
-      <div class="tab-content">Arreglo de todos los dispositivos moviles Ventas de accesorios tecnologicos. Garantia para los arreglos a computo </div>
+      <div class="tab-content">Arreglamos todo tipo de dispositivos moviles. Ventas de accesorios tecnologicos para: <br> <br> Celulares, Computadores,Tables,etc. Ademas de esto brindamos muy buena garantia en nuestros productos y todo dispositivo reparado en nuestra entidad </div>
     </div>
     <div class="tab">
       <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
       <label for="tab-4" class="tab-label">Contactenos</label>
-      <div class="tab-content">Correos serviciotecnico@hotmail.com vikingossa@gmail.com.                                 .</div>
+      <div class="tab-content">Esperamos que nos contates para cualquier informacion nuestros correos estan disponibles <br> <br>Correos: mauroxtecno@gmail.com</div>
     </div>
     <div class="tab">
       <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
       <label for="tab-5" class="tab-label">Ayuda</label>
-      <div class="tab-content">Direccion : Br/ Tibuvayes - Bogota D.C. Para mas ayuda por favor comunicarse a los siguientes numeros que aparecen en pantalla <br> <br>Cel: 3005974765 Tel:54654323</div>
+      <div class="tab-content">Direccion : Br/ Tibuvayes - Bogota D.C. Para mas ayuda por favor comunicarse a los siguientes numeros que aparecen en pantalla <br> <br> Cel: 3219791526 Tel:54654323</div>
     </div>
     <div class="tab">
       <input type="radio" name="css-tabs" id="tab-6" class="tab-switch">
@@ -174,12 +181,7 @@ body {font-family: Arial;}
                         </div>
                         <div class="contenido">
                             <p> Como negocio sabemos que las ventas son papel importante en cada negocio, por eso cuidamos a nuestros clientes como tu  brindandoles un excelente servicio ademas, las ventas mas baratas que encontraras.</p>
-                            <center>
-                              <form action="ventas.html">
-                                <input type="submit" class="boton" value="INGRESAR">
-                              </form>
-
-                            </center>
+ 
                         </div>
                         
                     </article></li>>
@@ -191,11 +193,6 @@ body {font-family: Arial;}
                         </div>
                         <div class="contenido">
                             <p>La informacion de las compras juega un papel importante en todo negocio, contamos con los mejores proveedores de accesorios tecnologicos que brindan una excelente garantia para todos los productos</p>
-                            <center>
-                              <form action="indexvivian.html"> 
-                                <input type="submit" class="boton" value="INGRESAR">
-                              </form>
-                            </center>
                         </div>
                     </article></li>
                     
@@ -206,11 +203,7 @@ body {font-family: Arial;}
                         </div>
                         <div class="contenido">
                             <p>En nuestro innventario de mercancia encontraras todo tipo de productos que necesitas para tu telefono, respuesto para tu Pc, ademas contamos con el servicio tecnico para todo quipo de computo.</p>
-                            <center>
-                               <form action="indexFrancy.html">
-                                <input type="submit" class="boton" value="INGRESAR">
-                                </form>
-                            </center>
+
                         </div>
                     </article></li>
                     
@@ -221,17 +214,19 @@ body {font-family: Arial;}
                         </div>
                         <div class="contenido">
                             <p>Contamos con los mejores profesionales para brindar el mejor de los servicios a nuestros clientes para arreglos de sus dispositivos informaticos, es un trabajo garantizado y de excelente calidad.</p>
-                            <center>
-                               <form action="indexJair.html">
-                                 <input type="submit" class="boton" value="INGRESAR">
-                               </form>
 
-                            </center>
-                
                         </div>
                     </article></li>
                 </ul>
 			</section>
+     <div class="wrapper""><center>
+         <h1 style="color: #E5A660">MISIÓN</h1>
+            <p> Empresa de Servicio Dedicada a Satisfacer las Necesidades de Soporte Tecnico y Mantenimiento que el Cliente Requiera, elevando asi el rendimiento en sus equipos de computo de una manera rapida y comoda, atraves del diagnostico y supervision de nuestro personal.</p>
+         <br />
+         <br />
+         <h1 style="color: #E5A660">VISIÓN</h1>
+             <p>Ser una Empresa Lider en el Mercado Regional, brindando servicios de Mantenimiento de Computo asistiendo personalmente en el menor tiempo posible a satisfacer las necesidades del cliente, dandole asi atencion personalizada y una supervision constante de sus equipos</p>
+    </div></center>
  </div>   
 </div>
 			<footer class="footer">
