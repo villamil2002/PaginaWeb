@@ -9,14 +9,13 @@ $(document).ready(function () {
 
 function cargarDatos() {
 
-
     if ($.fn.DataTable.isDataTable('#tbProducto')) {
         $('#tbProducto').DataTable().destroy();
     }
 
     $('#tbProducto tbody').html('');
 
-    AjaxGet("../frmProducto.aspx/Obtener",
+    AjaxGet("../frmTblProducto.aspx/Obtener",
         function (response) {
             $(".card-body").LoadingOverlay("hide");
             if (response.estado) {
@@ -26,8 +25,8 @@ function cargarDatos() {
                         $("<td>").text(i + 1),
                         $("<td>").text(row.Codigo),
                         $("<td>").text(row.Nombre),
-                        $("<td>").text(row.Descripcion),
-                        $("<td>").text(row.oCategoria.Descripcion),
+                        //$("<td>").text(row.Descripcion),
+                       // $("<td>").text(row.oCategoria.Descripcion),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
                             $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("producto", row),
@@ -50,25 +49,6 @@ function cargarDatos() {
         })
 }
 
-function ObtenerCategoria() {
-    $("#cboCategoria").html("");
-    AjaxGet("../frmCategoria.aspx/Obtener",
-        function (response) {
-            $(".card-body").LoadingOverlay("hide");
-            if (response.estado) {
-                $.each(response.objeto, function (i, row) {
-                    if (row.Activo == true)
-                        $("<option>").attr({ "value": row.IdCategoria }).text(row.Descripcion).appendTo("#cboCategoria");
-                })
-            }
-        },
-        function () {
-            $(".card-body").LoadingOverlay("hide");
-        },
-        function () {
-            $(".card-body").LoadingOverlay("show");
-        })
-}
 
 
 $('#tbProducto tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]', function () {
@@ -103,7 +83,7 @@ $('#tbProducto tbody').on('click', 'button[class="btn btn-sm btn-danger"]', func
     }, function () {
 
 
-        AjaxPost("../frmProducto.aspx/Eliminar", JSON.stringify(request),
+        AjaxPost("../frmTblProducto.aspx/Eliminar", JSON.stringify(request),
             function (response) {
                 if (response.estado) {
                     cargarDatos();
@@ -165,7 +145,7 @@ $('#btnGuardarCambios').on('click', function () {
 
         if (parseInt($("#txtIdProducto").val()) == 0) {
 
-            AjaxPost("../frmProducto.aspx/Guardar", JSON.stringify(request),
+            AjaxPost("../frmTblProducto.aspx/Guardar", JSON.stringify(request),
                 function (response) {
                     $(".modal-body").LoadingOverlay("hide");
                     if (response.estado) {
@@ -182,7 +162,7 @@ $('#btnGuardarCambios').on('click', function () {
                     $(".modal-body").LoadingOverlay("show");
                 })
         } else {
-            AjaxPost("../frmProducto.aspx/Editar", JSON.stringify(request),
+            AjaxPost("../frmTblProducto.aspx/Editar", JSON.stringify(request),
                 function (response) {
                     $(".modal-body").LoadingOverlay("hide");
                     if (response.estado) {

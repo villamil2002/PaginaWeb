@@ -55,6 +55,7 @@
     <Compile Include="Respuesta.cs" />
     <Compile Include="Rol.cs" />
     <Compile Include="SubMenu.cs" />
+    <Compile Include="tbl_Producto.cs" />
     <Compile Include="Tienda.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Venta.cs" />

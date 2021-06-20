@@ -24,7 +24,7 @@
                                 <input id="txtIdTienda" type="hidden" value="0" />
                                 <div class="col-sm-2">
                                   <div class="form-group mb-0">
-                                    <label for="txtRuc" class="col-form-label col-form-label-sm">RUC:</label>
+                                    <label for="txtRuc" class="col-form-label col-form-label-sm">NIT:</label>
                                     <input type="text" class="form-control form-control-sm model" readonly id="txtRuc" name="RUC">
                                   </div>
                                 </div>
@@ -104,7 +104,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Nombre Tienda</th>
-                                                <th>RUC Tienda</th>
+                                                <th>NIT Tienda</th>
                                                 <th>Codigo Producto</th>
                                                 <th>Nombre Producto</th>
                                                 <th>Stock</th>

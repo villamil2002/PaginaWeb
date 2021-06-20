@@ -7,7 +7,7 @@
             <div class="col-sm-12">
                <div class="card">
                   <div class="card-header">
-                    Mantenedor Tiendas
+                    Administración Tiendas
                   </div>
                   <div class="card-body">
                         <div class="row">
@@ -23,7 +23,7 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Nombre</th>
-                                            <th>RUC</th>
+                                            <th>NIT</th>
                                             <th>Direccion</th>
                                             <th>Telefono</th>
                                             <th>Estado</th>

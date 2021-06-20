@@ -6,7 +6,7 @@
             <div class="col-sm-12">
                <div class="card">
                   <div class="card-header">
-                    Mantenedor Categorias
+                    Administración Categorias
                   </div>
                   <div class="card-body">
                         <div class="row">

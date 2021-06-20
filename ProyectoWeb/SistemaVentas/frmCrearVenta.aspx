@@ -116,7 +116,7 @@
                                           </div>
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
-                                              <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">RUC:</label>
+                                              <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">NIT:</label>
                                               <label class="form-control form-control-sm model mb-1" readonly id="lbltiendaruc" ></label>
                                             </div>
                                           </div>
@@ -186,7 +186,7 @@
                                               <select class="form-control form-control-sm model" id="cboclientetipodocumento" name="Rol">
                                                   <option value="DNI">DNI</option>
                                                   <option value="Carnet Extranjeria">Carnet Extranjeria</option>
-                                                  <option value="RUC">RUC</option>
+                                                  <option value="RUC">NIT</option>
                                               </select>
                                             </div>
                                           </div>

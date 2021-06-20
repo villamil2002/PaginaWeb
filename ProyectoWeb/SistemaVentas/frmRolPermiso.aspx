@@ -14,7 +14,7 @@
                   <div class="card-header">
                     <div class="row">
                         <div class="col-sm-10">
-                          <label>Mantenedor de Permisos</label>
+                          <label>Administración de Permisos</label>
                         </div>
                         <div class="col-sm-2 float-right">
                           <button id="btnGuardarCambios" class="btn btn-sm btn-success">Guardar Cambios</button>

@@ -2970,6 +2970,7 @@
     <Content Include="Controlador\frmConsultarVenta\frmConsultarVenta.js" />
     <Content Include="Controlador\frmCrearVenta\frmCrearVenta.js" />
     <Content Include="Controlador\frmProductoTienda\frmProductoTienda.js" />
+    <Content Include="Controlador\frmProducto\frmTblProducto.js" />
     <Content Include="Controlador\frmProducto\frmProducto.js" />
     <Content Include="Controlador\frmProveedor\frmProveedor.js" />
     <Content Include="Controlador\frmRegistrarCompra\frmRegistrarCompra.js" />
@@ -2983,7 +2984,8 @@
     <Content Include="Controlador\rptVentas\rptVentas.js" />
     <Content Include="Controlador\Utilidades.js" />
     <Content Include="css\estilo.css" />
-    <Content Include="css\IniciarSesion\Styles.css" />
+    <Content Include="css\IniciarSesion\style.css" />
+    <Content Include="css\IniciarSesion\_Styles.css" />
     <Content Include="docCompra.aspx" />
     <Content Include="docVenta.aspx" />
     <Content Include="frmCategoria.aspx" />
@@ -2996,6 +2998,7 @@
     <Content Include="frmRegistrarCompra.aspx" />
     <Content Include="frmRol.aspx" />
     <Content Include="frmRolPermiso.aspx" />
+    <Content Include="frmTblProducto.aspx" />
     <Content Include="frmTienda.aspx" />
     <Content Include="frmUsuario.aspx" />
     <Content Include="Global.asax" />
@@ -3025,6 +3028,7 @@
     <Content Include="img\excelenteservicio.jpeg" />
     <Content Include="img\facebook.png" />
     <Content Include="img\Fondo.jpg" />
+    <Content Include="img\footer-background.jpg" />
     <Content Include="img\fromventas.png" />
     <Content Include="img\garantia-productos-comprados.png" />
     <Content Include="img\gestion_inventario.jpg" />
@@ -3060,6 +3064,7 @@
     <Content Include="img\youtube.png" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
+    <Content Include="js\script.js" />
     <Content Include="PaginaInicio.aspx" />
     <Content Include="rptProductoTienda.aspx" />
     <Content Include="rptVentas.aspx" />
@@ -3150,6 +3155,13 @@
     </Compile>
     <Compile Include="frmRolPermiso.aspx.designer.cs">
       <DependentUpon>frmRolPermiso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTblProducto.aspx.cs">
+      <DependentUpon>frmTblProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTblProducto.aspx.designer.cs">
+      <DependentUpon>frmTblProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmTienda.aspx.cs">
       <DependentUpon>frmTienda.aspx</DependentUpon>

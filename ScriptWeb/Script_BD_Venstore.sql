@@ -28,7 +28,7 @@ create table DetalleCompraProveedor
 create table Producto
 (
 	IdProducto int (20),
-	DescripcionProdcuto varchar (50),
+	DescripcionProducto varchar (50),
 	NumeroSerie varchar (20),
 	CantidadProducto int (20),
 	ValorProducto int (50),

@@ -19,7 +19,7 @@
                                           <input id="txtIdProveedor" type="hidden" value="0" />
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
-                                              <label for="txtRucProveedor" class="col-form-label col-form-label-sm">RUC:</label>
+                                              <label for="txtRucProveedor" class="col-form-label col-form-label-sm">NIT:</label>
                                               <input type="text" class="form-control form-control-sm model" readonly id="txtRucProveedor" name="RUC">
                                             </div>
                                           </div>
@@ -47,7 +47,7 @@
                                           <input id="txtIdTienda" type="hidden" value="0" />
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
-                                              <label for="txtRucTienda" class="col-form-label col-form-label-sm">RUC:</label>
+                                              <label for="txtRucTienda" class="col-form-label col-form-label-sm">NIT:</label>
                                               <input type="text" class="form-control form-control-sm model" readonly id="txtRucTienda" name="RUC">
                                             </div>
                                           </div>
@@ -134,8 +134,8 @@
                                         <thead>
                                             <tr>
                                                 <th></th>
-                                                <th>Ruc Proveedor</th>
-                                                <th>Ruc Tienda</th>
+                                                <th>NIT Proveedor</th>
+                                                <th>NIT Tienda</th>
                                                 <th>Codigo Producto</th>
                                                 <th>Cantidad</th>
                                                 <th>Precio Compra</th>
@@ -176,7 +176,7 @@
                     <thead>
                       <tr>
                           <th></th>
-                          <th>RUC</th>
+                          <th>NIT</th>
                           <th>Razon Social</th>
                           <th>Direccion</th>
                       </tr>
@@ -206,7 +206,7 @@
                     <thead>
                       <tr>
                           <th></th>
-                          <th>RUC</th>
+                          <th>NIT</th>
                           <th>Razón Social</th>
                           <th>Direccion</th>
                       </tr>

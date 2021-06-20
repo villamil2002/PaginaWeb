@@ -7,7 +7,7 @@
             <div class="col-sm-12">
                <div class="card">
                   <div class="card-header">
-                    Mantenedor Proveedores
+                    Administración Proveedores
                   </div>
                   <div class="card-body">
                         <div class="row">
@@ -22,7 +22,7 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>RUC</th>
+                                            <th>NIT</th>
                                             <th>Razon Social</th>
                                             <th>Telefono</th>
                                             <th>Correo</th>
