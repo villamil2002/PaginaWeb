@@ -96,7 +96,7 @@ namespace CapaDatos
                                                       {
                                                           IdTienda = int.Parse(dato.Element("IdTienda").Value),
                                                           Nombre = dato.Element("Nombre").Value,
-                                                          RUC = dato.Element("RUC").Value,
+                                                          NIT = dato.Element("NIT").Value,
                                                           Direccion = dato.Element("Direccion").Value,
                                                           Telefono = dato.Element("Telefono").Value
                                                       }).FirstOrDefault();

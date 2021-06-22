@@ -58,7 +58,7 @@ namespace CapaDatos
                             oTienda = new Tienda()
                             {
                                 IdTienda = Convert.ToInt32(dr["IdTienda"].ToString()),
-                                RUC = dr["RUC"].ToString(),
+                                NIT = dr["RUC"].ToString(),
                                 Nombre = dr["NombreTienda"].ToString(),
                                 Direccion = dr["DireccionTienda"].ToString(),
                             },

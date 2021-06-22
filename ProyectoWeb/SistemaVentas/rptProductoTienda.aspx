@@ -55,7 +55,7 @@
                                 <table id="tbReporte" class="table table-striped table-bordered nowrap compact" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>Ruc Tienda</th>
+                                            <th>NIT Tienda</th>
                                             <th>Nombre Tienda</th>
                                             <th>Direccion Tienda</th>
                                             <th>Codigo Producto</th>

@@ -102,7 +102,7 @@ namespace CapaDatos
                                 rptDetalleVenta.oTienda = (from dato in doc.Element("DETALLE_VENTA").Elements("DETALLE_TIENDA")
                                                            select new Tienda()
                                                            {
-                                                               RUC = dato.Element("RUC").Value,
+                                                               NIT = dato.Element("RUC").Value,
                                                                Nombre = dato.Element("Nombre").Value,
                                                                Direccion = dato.Element("Direccion").Value
                                                            }).FirstOrDefault();

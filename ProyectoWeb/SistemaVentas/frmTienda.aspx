@@ -58,13 +58,13 @@
               <div class="form-group row">
                 <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control form-control-sm model" id="txtNombre" name="RUC">
+                  <input type="text" class="form-control form-control-sm model" id="txtNombre" name="NIT">
                 </div>
               </div>
               <div class="form-group row">
-                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Ruc</label>
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">NIT</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control form-control-sm model" id="txtRuc" name="Razón Social">
+                  <input type="text" class="form-control form-control-sm model" id="txtNit" name="Razón Social">
                 </div>
               </div>
               <div class="form-group row">

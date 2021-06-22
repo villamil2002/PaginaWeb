@@ -21,7 +21,7 @@ function cargarDatos() {
                     $("<tr>").append(
                         $("<td>").text(i + 1),
                         $("<td>").text(row.Nombre),
-                        $("<td>").text(row.RUC),
+                        $("<td>").text(row.NIT),
                         $("<td>").text(row.Direccion),
                         $("<td>").text(row.Telefono),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
@@ -51,7 +51,7 @@ $('#tbTienda tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]', 
     var model = $(this).data("tienda")
     $("#txtIdTienda").val(model.IdTienda);
     $("#txtNombre").val(model.Nombre);
-    $("#txtRuc").val(model.RUC);
+    $("#txtNit").val(model.NIT);
     $("#txtDireccion").val(model.Direccion);
     $("#txtTelefono").val(model.Telefono);
     $("#cboEstado").val(model.Activo == true ? 1 : 0);
@@ -99,7 +99,7 @@ $('#btnNuevoTienda').on('click', function () {
 
     $("#txtIdTienda").val("0");
     $("#txtNombre").val("");
-    $("#txtRuc").val("");
+    $("#txtNit").val("");
     $("#txtDireccion").val("");
     $("#txtTelefono").val("");
 
@@ -128,7 +128,7 @@ $('#btnGuardarCambios').on('click', function () {
             oTienda: {
                 IdTienda: parseInt($("#txtIdTienda").val()),
                 Nombre: $("#txtNombre").val(),
-                RUC: $("#txtRuc").val(),
+                NIT: $("#txtNit").val(),
                 Direccion: $("#txtDireccion").val(),
                 Telefono: $("#txtTelefono").val(),
                 Activo: ($("#cboEstado").val() == "1" ? true : false)

@@ -48,7 +48,7 @@ namespace CapaDatos
                         rptListaProveedor.Add(new Proveedor()
                         {
                             IdProveedor = Convert.ToInt32(dr["IdProveedor"].ToString()),
-                            Ruc = dr["Ruc"].ToString(),
+                            NIT = dr["NIT"].ToString(),
                             RazonSocial = dr["RazonSocial"].ToString(),
                             Telefono = dr["Telefono"].ToString(),
                             Correo = dr["Correo"].ToString(),
@@ -78,7 +78,7 @@ namespace CapaDatos
                 try
                 {
                     SqlCommand cmd = new SqlCommand("usp_RegistrarProveedor", oConexion);
-                    cmd.Parameters.AddWithValue("Ruc", oProveedor.Ruc);
+                    cmd.Parameters.AddWithValue("NIT", oProveedor.NIT);
                     cmd.Parameters.AddWithValue("RazonSocial", oProveedor.RazonSocial);
                     cmd.Parameters.AddWithValue("Telefono", oProveedor.Telefono);
                     cmd.Parameters.AddWithValue("Correo", oProveedor.Correo);
@@ -111,7 +111,7 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("usp_ModificarProveedor", oConexion);
                     cmd.Parameters.AddWithValue("IdProveedor", oProveedor.IdProveedor);
-                    cmd.Parameters.AddWithValue("Ruc", oProveedor.Ruc);
+                    cmd.Parameters.AddWithValue("Ruc", oProveedor.NIT);
                     cmd.Parameters.AddWithValue("RazonSocial", oProveedor.RazonSocial);
                     cmd.Parameters.AddWithValue("Telefono", oProveedor.Telefono);
                     cmd.Parameters.AddWithValue("Correo", oProveedor.Correo);

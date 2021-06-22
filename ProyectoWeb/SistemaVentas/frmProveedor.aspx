@@ -57,9 +57,9 @@
             <form>
               <input id="txtIdProveedor" class="model" name="IdUsuario" value="0" type="hidden" />
               <div class="form-group row">
-                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">RUC</label>
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">NIT</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control form-control-sm model" id="txtRuc" name="RUC">
+                  <input type="text" class="form-control form-control-sm model" id="txtRuc" name="NIT">
                 </div>
               </div>
               <div class="form-group row">

@@ -49,7 +49,7 @@ namespace CapaDatos
                         {
                             IdTienda = Convert.ToInt32(dr["IdTienda"].ToString()),
                             Nombre = dr["Nombre"].ToString(),
-                            RUC = dr["RUC"].ToString(),
+                            NIT = dr["NIT"].ToString(),
                             Direccion = dr["Direccion"].ToString(),
                             Telefono = dr["Telefono"].ToString(),
                             Activo = Convert.ToBoolean(dr["Activo"].ToString())
@@ -78,7 +78,7 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("usp_RegistrarTienda", oConexion);
                     cmd.Parameters.AddWithValue("Nombre", oTienda.Nombre);
-                    cmd.Parameters.AddWithValue("Ruc", oTienda.RUC);
+                    cmd.Parameters.AddWithValue("NIT", oTienda.NIT);
                     cmd.Parameters.AddWithValue("Direccion", oTienda.Direccion);
                     cmd.Parameters.AddWithValue("Telefono", oTienda.Telefono);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
@@ -114,7 +114,7 @@ namespace CapaDatos
                     SqlCommand cmd = new SqlCommand("usp_ModificarTienda", oConexion);
                     cmd.Parameters.AddWithValue("IdTienda", oTienda.IdTienda);
                     cmd.Parameters.AddWithValue("Nombre", oTienda.Nombre);
-                    cmd.Parameters.AddWithValue("Ruc", oTienda.RUC);
+                    cmd.Parameters.AddWithValue("Ruc", oTienda.NIT);
                     cmd.Parameters.AddWithValue("Direccion", oTienda.Direccion);
                     cmd.Parameters.AddWithValue("Telefono", oTienda.Telefono);
                     cmd.Parameters.AddWithValue("Activo", oTienda.Activo);
