@@ -20,7 +20,7 @@
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
                                               <label for="txtRucProveedor" class="col-form-label col-form-label-sm">NIT:</label>
-                                              <input type="text" class="form-control form-control-sm model" readonly id="txtRucProveedor" name="RUC">
+                                              <input type="text" class="form-control form-control-sm model" readonly id="txtRucProveedor" name="NIT">
                                             </div>
                                           </div>
                                           <div class="col-sm-4">
@@ -48,7 +48,7 @@
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
                                               <label for="txtRucTienda" class="col-form-label col-form-label-sm">NIT:</label>
-                                              <input type="text" class="form-control form-control-sm model" readonly id="txtRucTienda" name="RUC">
+                                              <input type="text" class="form-control form-control-sm model" readonly id="txtRucTienda" name="NIT">
                                             </div>
                                           </div>
                                           <div class="col-sm-4">

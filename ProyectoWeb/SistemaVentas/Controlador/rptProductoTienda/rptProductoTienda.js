@@ -74,7 +74,7 @@ function CargarDatos() {
                     $.each(filas, function (i, row) {
                         
                         $("<tr>").append(
-                            $("<td>").text(row["Ruc Tienda"]),
+                            $("<td>").text(row["NIT Tienda"]),
                             $("<td>").text(row["Nombre Tienda"]),
                             $("<td>").text(row["Direccion Tienda"]),
                             $("<td>").text(row["Codigo Producto"]),

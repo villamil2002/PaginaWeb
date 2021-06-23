@@ -186,7 +186,7 @@
                                               <select class="form-control form-control-sm model" id="cboclientetipodocumento" name="Rol">
                                                   <option value="DNI">DNI</option>
                                                   <option value="Carnet Extranjeria">Carnet Extranjeria</option>
-                                                  <option value="RUC">NIT</option>
+                                                  <option value="NIT">NIT</option>
                                               </select>
                                             </div>
                                           </div>
@@ -321,9 +321,9 @@
                                   <div class="col-sm-4">
                                         <div class="input-group input-group-sm mb-2">
                                           <div class="input-group-prepend">
-                                             <label class="input-group-text" for="inputGroupSelect01">IGV S/.</label>
+                                             <label class="input-group-text" for="inputGroupSelect01">IVA S/.</label>
                                           </div>
-                                          <input id="txtigv" readonly type="text" class="form-control" value="0" >
+                                          <input id="txtiva" readonly type="text" class="form-control" value="0" >
                                         </div>
                                     </div>
                                   <div class="col-sm-4">

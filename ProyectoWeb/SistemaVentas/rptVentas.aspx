@@ -65,7 +65,7 @@
                                             <th>Numero Documento</th>
                                             <th>Tipo Documento</th>
                                             <th>Nombre Tienda</th>
-                                            <th>Ruc Tienda</th>
+                                            <th>NIT Tienda</th>
                                             <th>Nombre Empleado</th>
                                             <th>Cantidad Unidades Vendidas</th>
                                             <th>Cantidad Productos</th>

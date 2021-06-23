@@ -24,8 +24,8 @@
                                 <input id="txtIdTienda" type="hidden" value="0" />
                                 <div class="col-sm-2">
                                   <div class="form-group mb-0">
-                                    <label for="txtRuc" class="col-form-label col-form-label-sm">NIT:</label>
-                                    <input type="text" class="form-control form-control-sm model" readonly id="txtRuc" name="RUC">
+                                    <label for="txtNIT" class="col-form-label col-form-label-sm">NIT:</label>
+                                    <input type="text" class="form-control form-control-sm model" readonly id="txtNIT" name="NIT">
                                   </div>
                                 </div>
                                 <div class="col-sm-3">
@@ -139,7 +139,7 @@
                     <thead>
                       <tr>
                           <th></th>
-                          <th>RUC</th>
+                          <th>NIT</th>
                           <th>Razón Social</th>
                           <th>Direccion</th>
                       </tr>

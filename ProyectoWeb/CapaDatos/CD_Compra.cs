@@ -90,13 +90,13 @@ namespace CapaDatos
                                 rptDetalleCompra.oProveedor = (from dato in doc.Element("DETALLE_COMPRA").Elements("DETALLE_PROVEEDOR")
                                                                select new Proveedor()
                                                                {
-                                                                   NIT = dato.Element("RUC").Value,
+                                                                   NIT = dato.Element("NIT").Value,
                                                                    RazonSocial = dato.Element("RazonSocial").Value,
                                                                }).FirstOrDefault();
                                 rptDetalleCompra.oTienda = (from dato in doc.Element("DETALLE_COMPRA").Elements("DETALLE_TIENDA")
                                                             select new Tienda()
                                                             {
-                                                                NIT = dato.Element("RUC").Value,
+                                                                NIT = dato.Element("NIT").Value,
                                                                 Nombre = dato.Element("Nombre").Value,
                                                                 Direccion = dato.Element("Direccion").Value
                                                             }).FirstOrDefault();

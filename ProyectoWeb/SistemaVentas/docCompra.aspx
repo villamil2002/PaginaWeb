@@ -40,7 +40,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="15">Ruc:</td>
+                            <td width="15">NIT:</td>
                             <td style="border-bottom: 1px solid black;"><center><span id="rucproveedor"></span></center></td>
                             <td width="100">Razon Social:</td>
                             <td style="border-bottom: 1px solid black;"><center><span id="nombreproveedor"></span></center></td>
@@ -58,7 +58,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="15">Ruc:</td>
+                            <td width="15">NIT:</td>
                             <td style="border-bottom: 1px solid black;"><center><span id="ructienda"></span></center></td>
                             <td width="110">Nombre Tienda:</td>
                             <td style="border-bottom: 1px solid black;"><center><span id="nombretienda"></span></center></td>
@@ -89,7 +89,7 @@
                                 <th style="width: 15%;">Cantidad</th>
                                 <th style="width: 50%;">Concepto</th>
                                 <th style="width: 20%;">P.Unit Compra</th>
-                                <th style="width: 25%;">Importe</th>
+                                <th style="width: 25%;">Total Compra</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -143,10 +143,10 @@
                         $("#numero").text(response.objeto.Codigo);
                         $("#fechacompra").text(response.objeto.FechaCompra);
 
-                        $("#rucproveedor").text(response.objeto.oProveedor.Ruc);
+                        $("#rucproveedor").text(response.objeto.oProveedor.NIT);
                         $("#nombreproveedor").text(response.objeto.oProveedor.RazonSocial);
 
-                        $("#ructienda").text(response.objeto.oTienda.RUC);
+                        $("#ructienda").text(response.objeto.oTienda.NIT);
                         $("#nombretienda").text(response.objeto.oTienda.Nombre);
                         
                         $("#totalcosto").text(response.objeto.TotalCosto);

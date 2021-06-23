@@ -22,11 +22,11 @@
                     <tbody>
                         <tr>
                             <td colspan="4">
-                                <img height="100" src="https://blog.hootsuite.com/wp-content/uploads/2017/06/facebook-cover-photos-whitespace-620x236.png">
+                                <img height="100" src="img/Logo_Venstore.PNG">
                             </td>
                             <td colspan="2" rowspan="3" align="center" style="vertical-align: top;">
                                 <table border="1" style="width: 100%; height: 100px; font-weight: bold; ">
-                                    <tr><td align="center">R.U.C. <span id="ructienda"></span></td></tr>
+                                    <tr><td align="center">NIT.<span id="ructienda"></span></td></tr>
                                     <tr bgcolor="#D9D9D9"><td align="center"><span id="tipodocumento"></span></td></tr>
                                     <tr><td align="center">NRO - <span id="codigodocumento"></span> </td></tr>
                                 </table>
@@ -137,7 +137,7 @@
                 function (response) {
                     $("#seleccion").LoadingOverlay("hide");
                     if (response.estado) {
-                        $("#ructienda").text(response.objeto.oTienda.RUC);
+                        $("#ructienda").text(response.objeto.oTienda.NIT);
                         $("#tipodocumento").text(response.objeto.TipoDocumento);
                         $("#codigodocumento").text(response.objeto.Codigo);
 

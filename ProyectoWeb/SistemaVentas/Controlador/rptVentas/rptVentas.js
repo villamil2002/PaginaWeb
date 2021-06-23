@@ -84,7 +84,7 @@ function CargarDatos() {
                             $("<td>").text(row["Numero Documento"]),
                             $("<td>").text(row["Tipo Documento"]),
                             $("<td>").text(row["Nombre Tienda"]),
-                            $("<td>").text(row["Ruc Tienda"]),
+                            $("<td>").text(row["NIT Tienda"]),
                             $("<td>").text(row["Nombre Empleado"]),
                             $("<td>").text(row["Cantidad Unidades Vendidas"]),
                             $("<td>").text(row["Cantidad Productos"]),

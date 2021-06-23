@@ -62,7 +62,7 @@ function cargarProveedor() {
                             $("<td>").append(
                                 $("<button>").addClass("btn btn-sm btn-primary ml-2").text("Seleccionar").data("proveedor", row)
                             ),
-                            $("<td>").text(row.Ruc),
+                            $("<td>").text(row.NIT),
                             $("<td>").text(row.RazonSocial),
                             $("<td>").text(row.Direccion),
 
@@ -100,7 +100,7 @@ function cargarTiendas() {
                             $("<td>").append(
                                 $("<button>").addClass("btn btn-sm btn-primary ml-2").text("Seleccionar").data("tienda", row)
                             ),
-                            $("<td>").text(row.RUC),
+                            $("<td>").text(row.NIT),
                             $("<td>").text(row.Nombre),
                             $("<td>").text(row.Direccion),
 
@@ -171,7 +171,7 @@ $('#tbProveedor tbody').on('click', 'button[class="btn btn-sm btn-primary ml-2"]
 
     var model = $(this).data("proveedor")
     $("#txtIdProveedor").val(model.IdProveedor);
-    $("#txtRucProveedor").val(model.Ruc);
+    $("#txtRucProveedor").val(model.NIT);
     $("#txtRazonSocialProveedor").val(model.RazonSocial);
 
     $('#modalProveedor').modal('hide');
@@ -187,7 +187,7 @@ $('#tbTienda tbody').on('click', 'button[class="btn btn-sm btn-primary ml-2"]', 
 
     var model = $(this).data("tienda")
     $("#txtIdTienda").val(model.IdTienda);
-    $("#txtRucTienda").val(model.RUC);
+    $("#txtRucTienda").val(model.NIT);
     $("#txtNombreTienda").val(model.Nombre);
 
     $('#modalTienda').modal('hide');

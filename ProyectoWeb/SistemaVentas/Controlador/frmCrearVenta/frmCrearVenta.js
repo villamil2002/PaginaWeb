@@ -9,7 +9,7 @@
                 //TIENDA
                 $("#txtIdTienda").val(response.objeto.oTienda.IdTienda);
                 $("#lbltiendanombre").text(response.objeto.oTienda.Nombre);
-                $("#lbltiendaruc").text(response.objeto.oTienda.RUC);
+                $("#lbltiendaruc").text(response.objeto.oTienda.NIT);
                 $("#lbltiendadireccion").text(response.objeto.oTienda.Direccion);
 
                 //USUARIO
@@ -318,7 +318,7 @@ $('#btnTerminarGuardarVenta').on('click', function () {
 
                 //PRECIOS
                 $("#txtsubtotal").val("0");
-                $("#txtigv").val("0");
+                $("#txtiva").val("0");
                 $("#txttotal").val("0");
                 $("#txtmontopago").val("");
                 $("#txtcambio").val("");
@@ -358,19 +358,19 @@ $('#btncalcular').on('click', function () {
 
 function calcularPrecios() {
     var subtotal = 0;
-    var igv = 0;
+    var iva = 0;
     var sumatotal = 0;
     $('#tbVenta > tbody  > tr').each(function (index, tr) {
         var fila = tr;
         var importetotal = parseFloat($(fila).find("td.importetotal").text());
         sumatotal = sumatotal + importetotal;
     });
-    igv = sumatotal * 0.18;
-    subtotal = sumatotal - igv;
+    iva = sumatotal * 0.19;
+    subtotal = sumatotal - iva;
 
 
     $("#txtsubtotal").val(subtotal.toFixed(2));
-    $("#txtigv").val(igv.toFixed(2));
+    $("#txtiva").val(iva.toFixed(2));
     $("#txttotal").val(sumatotal.toFixed(2));
 }
 
