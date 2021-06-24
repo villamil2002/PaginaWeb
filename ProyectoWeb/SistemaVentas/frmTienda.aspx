@@ -3,12 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-        <div class="row">
+       <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header">
-                    Administración Tiendas
-                  </div>
+                 <center><div class="card-header"  style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
+                   <b> Administración Tiendas</b>
+                  </div></center>
                   <div class="card-body">
                         <div class="row">
                             <div class="col-sm-2">

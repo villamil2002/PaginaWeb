@@ -13,9 +13,9 @@
                <div class="card">
                   <div class="card-header">
                     <div class="row">
-                        <div class="col-sm-10">
+                        <div class="col-sm-10" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'; font-size:x-large"><b>
                           <label>Administración de Permisos</label>
-                        </div>
+                       </b> </div>
                         <div class="col-sm-2 float-right">
                           <button id="btnGuardarCambios" class="btn btn-sm btn-success">Guardar Cambios</button>
                          </div>
@@ -24,7 +24,7 @@
                   <div class="card-body">
                         <div class="row">
                             <div  class="col-sm-2">
-                                <label>Seleccion Rol:</label>
+                                <label>Seleccione el Rol:</label>
                             </div>
                             <div class="col-sm-3">
                                 <select class="form-control form-control-sm model" id="cboRol" name="Activo">

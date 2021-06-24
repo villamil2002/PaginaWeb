@@ -58,11 +58,11 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header p-2">
+                  <div class="card-header p-2"  style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Registra Nueva Venta
 
                       <div class="float-right">
-                          <button id="btnTerminarGuardarVenta" class="btn-custom btn-primary btn-sm-custom float-right"><i class="fa fa-print" aria-hidden="true"></i> Imprimir y Terminar Venta
+                          <button id="btnTerminarGuardarVenta" class="btn-custom btn-primary btn-sm-custom float-right" style="color:black; background:#E3E3D5 "><i class="fa fa-print" aria-hidden="true"></i> Imprimir y Terminar Venta
                           </button>
                       </div>
                   </div>
@@ -91,7 +91,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="card" style="background-color: #F7F7F7">
-                                  <div class="card-body p-2">
+                                  <div class="card-body p-2" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                                       <div class="row">
                                           <div class="col-sm-10">
                                               <h6 class="card-title mb-1">Tienda origen</h6>
@@ -132,9 +132,9 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="card" style="background-color: #F7F7F7">
-                                  <div class="card-body p-2">
+                                  <div class="card-body p-2" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                                       
-                                      <div class="row">
+                                      <div class="row" >
                                           <div class="col-sm-10">
                                               <h6 class="card-title mb-1">Datos Empleado</h6>
                                           </div>

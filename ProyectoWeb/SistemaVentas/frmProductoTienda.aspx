@@ -4,13 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
      <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12"">
                 <div class="mb-3" id="accordion">
                   <div class="card">
-                    <div class="card-header p-2" id="headingOne">
+                    <div class="card-header p-2" id="headingOne" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                         <label>Asignar Productos a Tienda</label>
                         <div class="float-right">
-                            <button class="btn btn-secondary btn-sm float-right" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne"><i class="fa fa-bars" aria-hidden="true"></i>
+                            <button  style="background-color: black" class="btn btn-secondary btn-sm float-right" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne"><i class="fa fa-bars" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
@@ -93,9 +93,9 @@
 
 
                <div class="card">
-                  <div class="card-header">
+                  <b><center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                     Lista de Asignaciones
-                  </div>
+                  </div></center></b>
                   <div id="card-lista" class="card-body p-3">
                         <div class="row">
                             <div class="col-sm-12">

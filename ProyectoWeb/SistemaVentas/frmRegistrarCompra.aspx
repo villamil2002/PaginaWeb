@@ -5,16 +5,16 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header">
+                 <b><center> <div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                      Registrar Compra
-                  </div>
+                  </div></center></b>
                   <div class="card-body card-compra p-2">
                         <div class="row">
 
                             <div class="col-sm-6">
                                 <div class="card">
                                   <div class="card-body p-2">
-                                      <h6 class="card-title mb-1">Detalle Proveedor Origen</h6>
+                                      <h6 class="card-title mb-1" style="font-family:'Comic Sans MS'">Detalle Proveedor Origen</h6>
                                       <div class="row">
                                           <input id="txtIdProveedor" type="hidden" value="0" />
                                           <div class="col-sm-4">
@@ -42,7 +42,7 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                   <div class="card-body p-2">
-                                      <h6 class="card-title mb-1">Detalle Tienda Destino</h6>
+                                      <h6 class="card-title mb-1" style="font-family:'Comic Sans MS'">Detalle Tienda Destino</h6>
                                       <div class="row">
                                           <input id="txtIdTienda" type="hidden" value="0" />
                                           <div class="col-sm-4">
@@ -72,7 +72,7 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                   <div class="card-body p-2">
-                                      <h6 class="card-title mb-1">Detalle Producto</h6>
+                                      <h6 class="card-title mb-1" style="font-family:'Comic Sans MS'">Detalle Producto</h6>
                                       <div class="row">
                                           <input id="txtIdProducto" type="hidden" value="0" />
                                           <div class="col-sm-2">

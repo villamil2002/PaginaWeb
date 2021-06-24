@@ -10,11 +10,11 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header">
+                 <b><center> <div class="card-header"  style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
                     Consultar Compras
-                  </div>
+                  </div></center></b>
                   <div class="card-body p-2">
-                        <div class="row">
+                        <div class="row" style="font-family:'Comic Sans MS'">
                             <div class="col-sm-2">
                               <div class="form-group mb-0">
                                 <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Fecha Inicio:</label>

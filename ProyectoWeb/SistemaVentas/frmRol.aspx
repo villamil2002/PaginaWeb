@@ -5,9 +5,9 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header">
+                  <center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'"><b>
                     Administración Roles
-                  </div>
+                  </div></b></center>
                   <div class="card-body">
                         <div class="row">
                             <div class="col-sm-2">
