@@ -22,7 +22,7 @@ function cargarDatos() {
                 $.each(response.objeto, function (i, row) {
                     $("<tr>").append(
                         $("<td>").text(row.oTienda.Nombre),
-                        $("<td>").text(row.oTienda.RUC),
+                        $("<td>").text(row.oTienda.NIT),
                         $("<td>").text(row.oProducto.Codigo),
                         $("<td>").text(row.oProducto.Nombre),
                         $("<td>").text(row.Stock),
@@ -182,7 +182,7 @@ function cargarTiendas() {
                             $("<td>").append(
                                 $("<button>").addClass("btn btn-sm btn-primary ml-2").text("Seleccionar").data("tienda", row)
                             ),
-                            $("<td>").text(row.RUC),
+                            $("<td>").text(row.NIT),
                             $("<td>").text(row.Nombre),
                             $("<td>").text(row.Direccion),
 
@@ -255,7 +255,7 @@ $('#tbTienda tbody').on('click', 'button[class="btn btn-sm btn-primary ml-2"]', 
 
     var model = $(this).data("tienda")
     $("#txtIdTienda").val(model.IdTienda);
-    $("#txtRuc").val(model.RUC);
+    $("#txtRuc").val(model.NIT);
     $("#txtRazonSocial").val(model.Nombre);
     $("#txtDireccion").val(model.Direccion);
 
