@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
 }
 body {
@@ -209,27 +209,33 @@ body {
 }
 /*INICIO ESTILO DE FOOTER*/
 
-.footer{
-	background: black;
-	
+.footer {
+	background: #ffbb62;
+	background-color: #ffbb62;
 }
-.izquierda{
+.izquierda {
 	float: left;
 	width: 550px;
 	padding: 20px;
 	color: white;
+	background-color: #DDB25B;
 }
-.derecha{
+.derecha {
 	float: left;
 	width: 550px;
 	padding: 20px;
+	
 }
-.siguenos{
-	color:white;
+.siguenos {
+	color: black;
 	text-align: center;
+	font-family: Arial;
+	font-size: 100%;
 }
-.autor{
-	color:white;
+.autor {
+	color: black;
+	text-align: center;
+	font-family: Arial;
 }
 /*FIN ESTILO DE FOOTER*/
 
@@ -288,3 +294,4 @@ p{
 	background: white;
 	margin: 10px auto;
 }
+

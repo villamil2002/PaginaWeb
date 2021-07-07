@@ -12,6 +12,7 @@
     <div style="font-size: 11px; text-align: right;">
             <center>
                 <button type="button" id="Imprimir" onclick="javascript:imprSelec('seleccion')">IMPRIMIR</button>
+                 <button onclick="window.close();">SALIR </button>
             </center>
             <br>
    </div>

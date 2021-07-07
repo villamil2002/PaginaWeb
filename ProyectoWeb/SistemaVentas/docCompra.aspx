@@ -11,10 +11,11 @@
     <div style="font-size: 11px; text-align: right;">
             <center>
                 <button type="button" id="Imprimir" onclick="javascript:imprSelec('seleccion')">IMPRIMIR</button>
+                <button onclick="window.close();">SALIR </button>
             </center>
             <br>
    </div>
-
+   
     <div id="seleccion">
         <center>
        
@@ -24,9 +25,11 @@
                 <td colspan="4"></td>
                 <td colspan="2" style="vertical-align: top;" align="right">
                     <table border="1" style="height: 90px; font-weight: bold; ">
+                        <div align="left"><img src="img/Logo_Venstore.PNG" width="100" height="100" /></div>                       
                         <tr bgcolor="#D9D9D9"><td align="center">COMPRA</td></tr>
                         <tr><td align="center">NRO - <span id="numero"></span> </td></tr>
                         <tr><td align="center">Fecha - <span id="fechacompra"></span> </td></tr>
+                        
                     </table>
                 </td>
             </tr>

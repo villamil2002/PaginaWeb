@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/Plugins/bootstrap.4.5.2/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/modernizr.custom.js"></script>
     <style>
 body {
@@ -139,11 +139,12 @@ footer div {
             Es claro que, en función del segmento (tecnología, educación, retail), modelo de ventas (venda directa, self service, e commerce, mayorista), público objetivo (B2B, B2C, B2B2C), la forma con las que se parametrizan las características anteriores varía, para que el modelo sea eficiente. No obstante, el concepto es aplicable en cualquier empresa con enfoque en crecimiento escalable.<br>
             Las principales razones para que se desarrolle un proceso claro y definido, en general, es hacer un rump up de los vendedores de forma más rápida, entrenar el equipo de ventas, ayudar al vendedor a evolucionar en sus resultados, aumentar la eficiencia comercial y escalar un equipo.
             <br>
-            En suma, podríamos pensar en la creación del proceso con base en 4 principales pilares:<br>
-            Definición de las etapas de venta<br>
-            Definición de los deberes del departamento de ventas<br>
-            Establecimiento de indicadores de ventas y niveles ideales de trabajo<br>
-            Formalización de las informaciones del proceso creado<br>
+            En suma, podríamos pensar en la creación del proceso con base en 4 principales pilares:<br/>
+            <li>Definición de las etapas de venta</li>
+            <li> Definición de los deberes del departamento de ventas </li>
+            <li> Establecimiento de indicadores de ventas y niveles ideales de trabajo</li>
+            <li> Formalización de las informaciones del proceso creado</li>
+          
         </p>
 
 </div>
@@ -154,9 +155,9 @@ footer div {
 
 	<div class="izquierda">
 		<center>
-			VIKINGOS SA-TPS-2233433
-             <p>Author: Hege Refsnes<br>
-  <a href="mailto:venstore@sena.com">venstore@sena.com</a></p>
+			VIKINGOS SA-TPS-2233423
+             <p>Autor: Gaes 02<br>
+  <a href="https://www.google.com/intl/es-419/gmail/about/">vikingos_S.A_@gmail.com</a></p>
 		</center>
 	</div>
 </footer>

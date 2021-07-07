@@ -63,7 +63,7 @@ body {font-family: Arial;}
 <body style="background-color: white";>
     
     <div style="padding-right:8%;padding-top:10px; float:right">
-        <button onclick="window.location.href='Inicio.aspx'" class="btn btn-primary">Login</button>
+        <button onclick="window.location.href='Inicio.aspx'" class="btn btn-primary" style="background-color:#DDB25B">Login</button>
     </div>  
     <br/>
   
@@ -228,25 +228,28 @@ body {font-family: Arial;}
              <p>Ser una Empresa Lider en el Mercado Regional, brindando servicios de Mantenimiento de Computo asistiendo personalmente en el menor tiempo posible a satisfacer las necesidades del cliente, dandole asi atencion personalizada y una supervision constante de sus equipos</p>
     </div></center>
  </div>   
-</div>
+</div><br /><br />
 			<footer class="footer">
-				<div class="izquierda">
+				
+                <div class="izquierda">
 					<center><img src="img/Logo_Venstore.png" alt=""></center>
-					<center><p class="textoabajo"><br>VIKINGOS SA-TPS-2233433</p></center>
+					<center><p class="textoabajo"><br>VIKINGOS SA-TPS-2233423</p></center>
 				</div>
 
 				<div class="derecha">
-					<p class="siguenos">Siguenos en...</p>
-					<center>
-						<img src="img/facebook.png" alt="">
-						<img src="img/twitter.png" alt="">
-						<img src="img/youtube.png" alt=""><br><br>
+                    <p class="siguenos"><strong> SIGUENOS EN ...</strong></p>
+                    
+                    <center>
+                        <a href="https://www.facebook.com/"> <img src="img/facebook.png"><p>Facebook</p> </a>
+                        <a href="https://twitter.com/?lang=es"> <img src="img/twitter.png"><p>Twitter</p> </a>
+                        <a href="https://www.youtube.com/"> <img src="img/youtube.png"><p>Youtube</p></a>
 
-						<p class="autor"></p>
 					</center>
+                  
 				</div>
 
 			</footer>
+              <p class="autor">GAES-02 VERSION 1.0</p>
 <div>
     
     
