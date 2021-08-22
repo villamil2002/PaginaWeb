@@ -3289,6 +3289,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\web.config" />
+    <None Include="Properties\PublishProfiles\Venstore - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Venstore-appservice - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

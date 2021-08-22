@@ -1,0 +1,6 @@
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaModelo\bin\Release\CapaModelo.dll
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaModelo\bin\Release\CapaModelo.pdb
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaModelo\obj\Release\CapaModelo.dll
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaModelo\obj\Release\CapaModelo.pdb

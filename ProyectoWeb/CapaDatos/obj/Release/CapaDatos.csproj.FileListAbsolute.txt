@@ -1,0 +1,9 @@
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\bin\Release\CapaDatos.dll
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\bin\Release\CapaDatos.pdb
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\bin\Release\CapaModelo.dll
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\bin\Release\CapaModelo.pdb
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\obj\Release\CapaDatos.csproj.AssemblyReference.cache
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\obj\Release\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\obj\Release\CapaDatos.csproj.CopyComplete
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\obj\Release\CapaDatos.dll
+C:\Dev\proyectos\PaginaWeb\ProyectoWeb\CapaDatos\obj\Release\CapaDatos.pdb
