@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/IniciarSesion/style.css" />
+    <link rel="stylesheet" href="css/styleLogin.css"/>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>LOGIN</title>
@@ -54,15 +54,15 @@
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/scriptLogin.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/IniciarSesion.js"></script>
 
-
-    <script src="Controlador/IniciarSesion/IniciarSesion.js"></script>
     <script src="Controlador/Utilidades.js"></script>
-    <script src="Assets/Plugins/loadingoverlay/loadingoverlay.js"></script>
+    <script src="js/loadingoverlay.js"></script>
 
-    <link href="Assets/Plugins/sweetalert2/sweetalert.css" rel="stylesheet" />
-    <script src="Assets/Plugins/sweetalert2/sweetalert.js"></script>
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <script src="js/sweetalert.js"></script>
 
 </body>
 </html>

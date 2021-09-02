@@ -418,8 +418,10 @@
     <Content Include="Controlador\rptProductoTienda\rptProductoTienda.js" />
     <Content Include="Controlador\rptVentas\rptVentas.js" />
     <Content Include="Controlador\Utilidades.js" />
+    <Content Include="css\styleLogin.css" />
     <Content Include="css\stylesAdmin.css" />
     <Content Include="css\stylesInicio.css" />
+    <Content Include="css\sweetalert.css" />
     <Content Include="docCompra.aspx" />
     <Content Include="docVenta.aspx" />
     <Content Include="frmCategoria.aspx" />
@@ -462,8 +464,13 @@
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="js\datatables-simple-demo.js" />
-    <Content Include="js\scripts.js" />
+    <Content Include="js\IniciarSesion.js" />
+    <Content Include="js\loadingoverlay.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\scriptLogin.js" />
+    <Content Include="js\scriptsInicio.js" />
     <Content Include="js\scriptsAdmin.js" />
+    <Content Include="js\sweetalert.js" />
     <Content Include="PaginaInicio.aspx" />
     <Content Include="rptProductoTienda.aspx" />
     <Content Include="rptVentas.aspx" />
