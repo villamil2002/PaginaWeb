@@ -48,7 +48,7 @@
 
         <form>
             <input type="email" name="email" placeholder="E-mail">
-            <a href="#" class="orange-btn">Obtener nueva Contraseña</a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" class="orange-btn">Obtener nueva Contraseña</a>
         </form>
     </div>
     <!-- partial -->
