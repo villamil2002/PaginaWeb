@@ -1,13 +1,8 @@
 ﻿using CapaDatos;
 using CapaModelo;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SistemaVentas
 {
@@ -17,12 +12,12 @@ namespace SistemaVentas
         {
 
         }
-        
+
         [WebMethod]
         [ScriptMethod(UseHttpGet = true)]
         public static Respuesta<Usuario> ObtenerDetalleUsuario()
         {
-            if(Configuracion.oUsuario != null)
+            if (Configuracion.oUsuario != null)
             {
                 int IdUsuario = Configuracion.oUsuario.IdUsuario;
                 Usuario oUsuario = new Usuario();
@@ -44,7 +39,7 @@ namespace SistemaVentas
                 return new Respuesta<Usuario>() { estado = false, objeto = null };
             }
 
-            
+
         }
 
         [WebMethod]
@@ -52,9 +47,9 @@ namespace SistemaVentas
         public static Respuesta<bool> CerrarSesion()
         {
             Configuracion.oUsuario = null;
-            
-            return new Respuesta<bool>() { estado = true};
-            
+
+            return new Respuesta<bool>() { estado = true };
+
         }
     }
 }

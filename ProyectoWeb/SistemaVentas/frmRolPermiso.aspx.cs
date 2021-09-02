@@ -2,11 +2,7 @@
 using CapaModelo;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SistemaVentas
 {
@@ -25,7 +21,7 @@ namespace SistemaVentas
 
             if (oListaPermisos != null)
             {
-                return new Respuesta<List<Permisos>>() { estado = true ,objeto = oListaPermisos};
+                return new Respuesta<List<Permisos>>() { estado = true, objeto = oListaPermisos };
             }
             else
             {

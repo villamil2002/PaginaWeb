@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaDatos
 {
@@ -13,9 +10,10 @@ namespace CapaDatos
     {
         public static CD_tbl_Producto _instancia = null;
 
-        private CD_tbl_Producto(){
+        private CD_tbl_Producto()
+        {
 
-    }
+        }
 
 
         public static CD_tbl_Producto Instancia

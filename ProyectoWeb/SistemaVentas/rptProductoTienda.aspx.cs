@@ -3,11 +3,7 @@ using CapaModelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SistemaVentas
 {
@@ -35,8 +31,8 @@ namespace SistemaVentas
                 }
                 rows.Add(row);
             }
-            return new Respuesta<string>() { estado = true , objeto = serializer.Serialize(rows) };
-            
+            return new Respuesta<string>() { estado = true, objeto = serializer.Serialize(rows) };
+
         }
     }
 }

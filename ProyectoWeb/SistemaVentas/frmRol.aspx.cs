@@ -2,12 +2,8 @@
 using CapaModelo;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SistemaVentas
 {
@@ -41,7 +37,7 @@ namespace SistemaVentas
             bool Respuesta = false;
             Respuesta = CD_Rol.Instancia.RegistrarRol(oRol);
             return new Respuesta<bool>() { estado = Respuesta };
-            
+
         }
 
         [WebMethod]
@@ -50,7 +46,7 @@ namespace SistemaVentas
             bool Respuesta = false;
             Respuesta = CD_Rol.Instancia.ModificarRol(oRol);
             return new Respuesta<bool>() { estado = Respuesta };
-            
+
         }
 
         [WebMethod]
@@ -61,6 +57,6 @@ namespace SistemaVentas
             return new Respuesta<bool>() { estado = Respuesta };
         }
 
-        
+
     }
 }

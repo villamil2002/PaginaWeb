@@ -4,14 +4,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
 namespace CapaDatos
 {
-    
+
     public class CD_Usuario
     {
         public static CD_Usuario _instancia = null;
@@ -25,7 +23,7 @@ namespace CapaDatos
         {
             get
             {
-                if(_instancia == null)
+                if (_instancia == null)
                 {
                     _instancia = new CD_Usuario();
                 }
@@ -292,5 +290,5 @@ namespace CapaDatos
 
     }
 
-  
+
 }

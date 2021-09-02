@@ -3,11 +3,7 @@ using CapaModelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SistemaVentas
 {
@@ -21,7 +17,7 @@ namespace SistemaVentas
         [WebMethod]
         public static Respuesta<string> Obtener(string fechainicio, string fechafin, int idtienda)
         {
-            DataTable dt = CD_Reportes.Instancia.ReporteVenta(Convert.ToDateTime(fechainicio),Convert.ToDateTime(fechafin),idtienda);
+            DataTable dt = CD_Reportes.Instancia.ReporteVenta(Convert.ToDateTime(fechainicio), Convert.ToDateTime(fechafin), idtienda);
 
             System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
             List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();

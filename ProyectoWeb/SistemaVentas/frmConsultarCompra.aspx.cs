@@ -2,11 +2,7 @@
 using CapaModelo;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SistemaVentas
 {
@@ -16,13 +12,13 @@ namespace SistemaVentas
         {
 
         }
-        
+
         [WebMethod]
-        public static Respuesta<List<Compra>> Obtener(string fechainicio,string fechafin,int idproveedor,int idtienda)
+        public static Respuesta<List<Compra>> Obtener(string fechainicio, string fechafin, int idproveedor, int idtienda)
         {
             List<Compra> oListaCompra = new List<Compra>();
-            oListaCompra = CD_Compra.Instancia.ObtenerListaCompra(Convert.ToDateTime(fechainicio),Convert.ToDateTime(fechafin),idproveedor,idtienda);
-            if(oListaCompra != null)
+            oListaCompra = CD_Compra.Instancia.ObtenerListaCompra(Convert.ToDateTime(fechainicio), Convert.ToDateTime(fechafin), idproveedor, idtienda);
+            if (oListaCompra != null)
                 return new Respuesta<List<Compra>>() { estado = true, objeto = oListaCompra };
             else
                 return new Respuesta<List<Compra>>() { estado = false, objeto = null };
