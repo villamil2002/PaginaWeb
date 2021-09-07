@@ -128,6 +128,7 @@ namespace CapaDatos
                         dr.Close();
 
                     }
+                    Console.WriteLine(rptUsuario);
 
                     return rptUsuario;
                 }

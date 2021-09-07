@@ -1,25 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaster.Master" AutoEventWireup="true" CodeBehind="PaginaInicio.aspx.cs" Inherits="SistemaVentas.Inicio" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+      <script src="js/modernizr.custom.js"></script>
         <title>Servicios</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/stylesInicio.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
+        <link href="css/stylesInicio.css" rel="stylesheet"/>
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -448,6 +446,4 @@
 
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
-</html>
-
 </asp:Content>

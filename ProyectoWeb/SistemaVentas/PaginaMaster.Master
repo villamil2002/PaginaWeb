@@ -63,9 +63,7 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navb" style="">
-        <ul id="menu" class="navbar-nav mr-auto">
-          
-        </ul>
+        <ul id="menu" class="navbar-nav mr-auto"></ul>
         <ul class="nav navbar-nav navbar-right" style="color:#fff">
           <li class="mr-4"><label id="nombreusuario"></label></li>
           <li class="mr-4"><label id="rolusuario"></label></li>
