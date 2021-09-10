@@ -67,6 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administracion\Administrador.html" />
+    <Content Include="Administracion\assets\demo\chart-area-demo.js" />
+    <Content Include="Administracion\assets\demo\chart-bar-demo.js" />
+    <Content Include="Administracion\assets\demo\chart-pie-demo.js" />
+    <Content Include="Administracion\assets\demo\datatables-demo.js" />
+    <Content Include="Administracion\assets\img\error-404-monochrome.svg" />
+    <Content Include="Administracion\css\styles.css" />
+    <Content Include="Administracion\js\datatables-simple-demo.js" />
+    <Content Include="Administracion\js\scripts.js" />
     <Content Include="Assets01\Plugins\bootstrap-5.0.2 %281%29\bootstrap-5.0.2\.babelrc.js" />
     <Content Include="Assets01\Plugins\bootstrap-5.0.2 %281%29\bootstrap-5.0.2\.gitattributes" />
     <Content Include="Assets01\Plugins\bootstrap-5.0.2 %281%29\bootstrap-5.0.2\.gitignore" />
@@ -3358,6 +3367,7 @@
     <Content Include="img\team\1.jpg" />
     <Content Include="img\team\2.jpg" />
     <Content Include="img\team\3.jpg" />
+    <Content Include="Index.aspx" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="js\datatables-simple-demo.js" />
@@ -3482,6 +3492,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="IniciarSesion.aspx.cs">
       <DependentUpon>IniciarSesion.aspx</DependentUpon>
