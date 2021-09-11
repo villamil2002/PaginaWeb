@@ -8,7 +8,9 @@
     <title>VIKINGOS S.A</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link href="Assets/Plugins/bootstrap.4.5.2/bootstrap.min.css" rel="stylesheet" />
+    
     <link href="Assets/Plugins/sweetalert2/sweetalert.css" rel="stylesheet" />
     <link href="Assets/Plugins/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
     <link href="Assets/Plugins/bootstrap-icons-1.2.2/font/bootstrap-icons.css" rel="stylesheet" />
@@ -44,6 +46,7 @@
     <script src="Assets/Plugins/datatables-buttons/js/vfs_fonts.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    
 
 
     <script src="Assets/Plugins/jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -64,63 +67,57 @@
         <link href="Administracion/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="Administracion/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+  
         <script src="Administracion/assets/demo/chart-area-demo.js"></script>
         <script src="Administracion/assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+     
         <script src="Administracion/js/datatables-simple-demo.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+   
 
   <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body class="sb-nav-fixed">
+
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">VIKINGOS S.A</a>
+            <a class="navbar-brand ps-3" href="index.aspx">VIKINGOS S.A</a>
+            
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <h4 class="navbar-brand ps-3" id="nombreusuario"></h4>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Buscar" aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
             </form>
+            <h4 class="mt-4 navbar-brand ps-3" id="rolusuario"></h4>
+            <li class="mr-2"><a href="javascript:CerrarSesion();"><i><button type="button" class="btn btn-primary" style="background:#FFCE63; color:black">Salir</button></i></a></li>
             <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-angle-double-down"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Salir</a></li>
-                    </ul>
-                </li>
-            </ul>
+          
         </nav>
 
+    </div>
+    <script src="Controlador/Utilidades.js"></script>
+    <script src="Assets/Plugins/loadingoverlay/loadingoverlay.js"></script>
+   
+    
          <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav"/>
                         <nav>
-                          <li class='sub-menu '><a class="nav-link" href='#'>Roles</a>
+                          <li class="sub-menu" id="menu"></li>
+                          <li class='sub-menu '><a class="nav-link dropdown-toggle" href='#'>Roles</a>
                               <ul>
-                                  <a class="nav-link" href='#settings'>Account</a>
-                                  <a class="nav-link" href="index.html">
-                                  <div class="sb-nav-link-icon"><i class="fas fa-user-check"></i></div>
-                                  Fijar cargo
-                                </a>
+                                  <a class="nav-link " href='#settings'>Account</a>
+                                  <a class="nav-link" href="index.html"> Fijar cargo</a>
                               </ul>
                           </li>
                            <li class='sub-menu '><a class="nav-link" href='#'>Roles</a>
                               <ul>
                                   <a class="nav-link" href='#settings'>Account</a>
                                   <a class="nav-link" href="index.html">
-                                  <div class="sb-nav-link-icon"><i class="fas fa-user-check"></i></div>
+                                  <div class="sb-nav-link-icon "><i class="fas fa-user-check"></i></div>
                                   Fijar cargo
                                 </a>
                               </ul>
@@ -135,9 +132,13 @@
       
         <div id="layoutSidenav_content">
                 <main>
-                <h1>hola mundo</h1>
+                    
+                    <div class="container-fluid">
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+     
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Administrador</h1>
+                        <h1 class="mt-4" id="rolusuario"></h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Usuario</li>
                         </ol>
@@ -336,14 +337,141 @@
             </div>
 </div>
 
-  <script>
+<script>
+     $(document).ready(function () {
+            AjaxGet("../Inicio.aspx/ObtenerDetalleUsuario",
+                function (response) {
+                    if (response.estado) {
+                     
+                        $("#menu").html();
+                        
+
+                        $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-fill"));
+                        $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-shield-fill"));
+
+                        $.each(response.objeto.oListaMenu, function (i, menu) {
+
+                            var li = null;
+                            var div = null;
+                            li = $("<li>").addClass("sub-menu").append(
+                                $("<a>").addClass("nav-link dropdown-toggle").attr({ "href": "#"}).append(
+                                    "<i class='" + menu.Icono + "' aria-hidden='true'></i>" + " " + menu.Nombre)
+                            );
+                            div = $("<ul>").addClass();
+
+                            $.each(menu.oSubMenu, function (x, submenu) {
+                                if (submenu.Activo) {
+                                 //   div = $("<a>").addClass("nav-link").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(submenu.Nombre)
+                                    div.append(
+                                        $("<a>").addClass("nav-link").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(
+                                            submenu.Nombre
+                                        )
+                                    )
+                                }
+
+                            })
+
+                            li.append(div);
+                            li.appendTo("#menu");
+                        })
+                    } else {
+                        window.location.href = 'IniciarSesion.aspx';
+                    }
+                },
+                function () {
+                },
+                function () {
+                })
+
+        })
+        function CerrarSesion() {
+            AjaxGet("../Inicio.aspx/CerrarSesion",
+                function (response) {
+                    if (response.estado) {
+                         window.location.href = 'IniciarSesion.aspx';
+                    } else {
+                    }
+                },
+                function () {
+                },
+                function () {
+                })
+        }
+</script>
+
+<script>
+  /*  $(document).ready(function () {
+
+
+        AjaxGet("../Inicio.aspx/ObtenerDetalleUsuario",
+            function (response) {
+                if (response.estado) {
+
+                    $("#menu").html("");
+
+                    $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-fill"));
+                    $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-shield-fill"));
+
+                    $.each(response.objeto.oListaMenu, function (i, menu) {
+
+                        var li = null;
+                        var div = null;
+                        li = $("<li>").addClass("nav-item dropdown").append(
+                            $("<a>").addClass("nav-link dropdown-toggle").attr({ "href": "#", "data-toggle": "dropdown" }).append(
+                                "<i class='" + menu.Icono + "' aria-hidden='true'></i>" + " " + menu.Nombre
+                            )
+                        );
+                        div = $("<div>").addClass("dropdown-menu");
+
+                        $.each(menu.oSubMenu, function (x, submenu) {
+                            if (submenu.Activo) {
+                                div.append(
+                                    $("<a>").addClass("dropdown-item").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(
+                                        "<i class='fa fa-caret-right' aria-hidden='true'></i>" + " " + submenu.Nombre
+                                    )
+                                )
+                            }
+
+                        })
+
+                        li.append(div);
+                        li.appendTo("#menu");
+                    })
+                } else {
+                    window.location.href = 'IniciarSesion.aspx';
+                }
+            },
+            function () {
+            },
+            function () {
+            })
+
+    })
+    function CerrarSesion() {
+        AjaxGet("../Inicio.aspx/CerrarSesion",
+            function (response) {
+                if (response.estado) {
+                    window.location.href = 'IniciarSesion.aspx';
+                } else {
+                }
+            },
+            function () {
+            },
+            function () {
+            })
+    }*/
+</script>
+
+
+<script>
     $('.sub-menu ul').hide();
     $(".sub-menu a").click(function () {
-      $(this).parent(".sub-menu").children("ul").slideToggle("100");
-      $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+        $(this).parent(".sub-menu").children("ul").slideToggle("100");
+        $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
     });
-  </script>
+</script>
 
 
 </body>
 </html>
+html>
