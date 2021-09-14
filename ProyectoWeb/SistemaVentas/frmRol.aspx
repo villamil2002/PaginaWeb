@@ -2,12 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-            <div class="col-sm-12">
-               <div class="card">
-                  <center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'"><b>
-                    Administración Roles
-                  </div></b></center>
+                <div class="row">
+                   <div class="col-sm-12">
+                       <div class="card">
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Fijar Rol</li>
+                        </ol>
                   <div class="card-body">
                         <div class="row">
                             <div class="col-sm-2">
@@ -23,7 +23,7 @@
                                             <th>#</th>
                                             <th>Descripcion</th>
                                             <th>Estado</th>
-                                            <th></th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -66,8 +66,8 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-primary">Guardar Cambios</button>
+            <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Cerrar</button> 
+            <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-success">Guardar Cambios</button>
           </div>
         </div>
       </div>

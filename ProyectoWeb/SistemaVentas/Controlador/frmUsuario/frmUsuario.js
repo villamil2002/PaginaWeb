@@ -30,8 +30,9 @@ function cargarDatos() {
                         $("<td>").text(row.Correo),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
-                            $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("usuario", row),
-                            $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("usuario", row.IdUsuario)
+                            $("<button>").addClass("btn btn-sm btn-primary mr-1").data("usuario", row).append($("<i>").addClass("fas fa-marker")),
+                            $("<button>").addClass("btn btn-sm btn-danger").data("usuario", row.IdUsuario).append($("<i>").addClass("far fa-trash-alt"))
+
                         )
                     ).appendTo("#tbUsuario tbody");
 

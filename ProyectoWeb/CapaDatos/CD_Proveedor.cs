@@ -108,7 +108,7 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("usp_ModificarProveedor", oConexion);
                     cmd.Parameters.AddWithValue("IdProveedor", oProveedor.IdProveedor);
-                    cmd.Parameters.AddWithValue("Ruc", oProveedor.NIT);
+                    cmd.Parameters.AddWithValue("NIT", oProveedor.NIT);
                     cmd.Parameters.AddWithValue("RazonSocial", oProveedor.RazonSocial);
                     cmd.Parameters.AddWithValue("Telefono", oProveedor.Telefono);
                     cmd.Parameters.AddWithValue("Correo", oProveedor.Correo);

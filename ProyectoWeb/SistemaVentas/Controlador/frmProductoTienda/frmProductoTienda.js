@@ -27,7 +27,8 @@ function cargarDatos() {
                         $("<td>").text(row.oProducto.Nombre),
                         $("<td>").text(row.Stock),
                         $("<td>").append(
-                            $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("productotienda", row.IdProductoTienda)
+                            $("<button>").addClass("btn btn-sm btn-danger").data("productotienda", row.IdProductoTienda).append($("<i>").addClass("far fa-trash-alt"))
+
                         )
                     ).appendTo("#tbProductoTienda tbody");
 

@@ -3,14 +3,14 @@
     <style>
         .buttons-excel{
             color: #fff !important;
-            background-color: #28a745 !important;
-            border-color: #28a745 !important;
+            background-color:#D6905A  !important;
+            border-color: #D6905A !important;
         }
 
         .buttons-pdf{
             color: #fff !important;
-            background-color: #dc3545 !important;
-            border-color: #dc3545 !important;
+            background-color: #FADE40 !important;
+            border-color: #FADE40 !important;
         }
 
         .buttons-print {
@@ -24,9 +24,9 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <b><center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                    Reporte de ventas
-                  </div></center></b>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Reporte de Ventasl</li>
+                        </ol>
                   <div class="card-body p-2">
                         <div class="row">
                             <div class="col-sm-2">
@@ -51,7 +51,7 @@
                             <div class="col-sm-2">
                                 <div class="form-group mb-0">
                                     <label for="btnBuscar" class="col-form-label col-form-label-sm invisible">Direccion:</label>
-                                    <button id="btnBuscar" type="button" class="btn btn-sm btn-primary btn-block">Buscar</button>
+                                    <button id="btnBuscar" type="button" class="btn btn-sm btn-success btn-block">Buscar</button>
                                 </div>
                             </div>
                         </div>

@@ -111,7 +111,7 @@ namespace CapaDatos
                     SqlCommand cmd = new SqlCommand("usp_ModificarTienda", oConexion);
                     cmd.Parameters.AddWithValue("IdTienda", oTienda.IdTienda);
                     cmd.Parameters.AddWithValue("Nombre", oTienda.Nombre);
-                    cmd.Parameters.AddWithValue("Ruc", oTienda.NIT);
+                    cmd.Parameters.AddWithValue("NIT", oTienda.NIT);
                     cmd.Parameters.AddWithValue("Direccion", oTienda.Direccion);
                     cmd.Parameters.AddWithValue("Telefono", oTienda.Telefono);
                     cmd.Parameters.AddWithValue("Activo", oTienda.Activo);

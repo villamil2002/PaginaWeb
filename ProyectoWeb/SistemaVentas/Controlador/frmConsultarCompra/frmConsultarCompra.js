@@ -101,7 +101,7 @@ function ObtenerTiendas() {
             $("#cboTienda").LoadingOverlay("hide");
             if (response.estado) {
 
-                $("<option>").attr({ "value": 0 }).text("-- Seleccionar todas --").appendTo("#cboTienda");
+                $("<option>").attr({ "value": 0 }).text("Seleccionar todos--").appendTo("#cboTienda");
 
                 $.each(response.objeto, function (i, row) {
                     if (row.Activo == true)
@@ -124,7 +124,7 @@ function ObtenerProveedores() {
             $("#cboProveedor").LoadingOverlay("hide");
             if (response.estado) {
 
-                $("<option>").attr({ "value": 0 }).text("-- Seleccionar todas --").appendTo("#cboProveedor");
+                $("<option>").attr({ "value": 0 }).text("Seleccionar todos--").appendTo("#cboProveedor");
                 $.each(response.objeto, function (i, row) {
                     if (row.Activo == true)
                         $("<option>").attr({ "value": row.IdProveedor }).text(row.RazonSocial).appendTo("#cboProveedor");

@@ -37,9 +37,9 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <b><center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                    Consultar Compras
-                  </div></center></b>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Colsultar Compras</li>
+                        </ol>
                   <div class="card-body p-2">
                         <div class="row">
                             <div class="col-sm-2">
@@ -56,26 +56,26 @@
                             </div>
                             <div class="col-sm-2">
                               <div class="form-group mb-0">
-                                <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Codigo Venta:</label>
+                                <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Codigo :</label>
                                 <input type="text" class="form-control form-control-sm model" id="txtCodigoVenta" name="FechaInicio" autocomplete="off">
                               </div>
                             </div>
                             <div class="col-sm-2">
                               <div class="form-group mb-0">
-                                <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Documento Cliente:</label>
+                                <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Documento :</label>
                                 <input type="text" class="form-control form-control-sm model" id="txtDocumentoCliente" name="FechaInicio" autocomplete="off">
                               </div>
                             </div>
                             <div class="col-sm-2">
                               <div class="form-group mb-0">
-                                <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Nombre Cliente:</label>
+                                <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Nombre :</label>
                                 <input type="text" class="form-control form-control-sm model" id="txtNombreCliente" name="FechaInicio" autocomplete="off">
                               </div>
                             </div>
                             <div class="col-sm-2">
                                 <div class="form-group mb-0">
                                     <label for="btnBuscar" class="col-form-label col-form-label-sm invisible">Direccion:</label>
-                                    <button id="btnBuscar" type="button" class="btn btn-sm btn-primary btn-block">Buscar</button>
+                                    <button id="btnBuscar" type="button" class="btn btn-sm btn-success btn-block">Buscar</button>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                                 <table id="tbVentas" class="table table-striped table-bordered nowrap compact" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th></th>
+                                            <th>Opcion</th>
                                             <th>Tipo Documento</th>
                                             <th>Codigo Documento</th>
                                             <th>Fecha Creacion</th>

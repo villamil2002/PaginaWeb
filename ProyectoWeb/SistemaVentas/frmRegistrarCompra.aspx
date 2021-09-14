@@ -5,9 +5,9 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                 <b><center> <div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                     Registrar Compra
-                  </div></center></b>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Registrar Compras</li>
+                        </ol>
                   <div class="card-body card-compra p-2">
                         <div class="row">
 
@@ -32,7 +32,7 @@
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
                                                 <label for="btnBuscarProveedor" class="col-form-label col-form-label-sm invisible">Buscar:</label>
-                                                <button id="btnBuscarProveedor" type="button" class="btn btn-sm btn-secondary btn-block">Buscar</button>
+                                                <button id="btnBuscarProveedor" type="button" class="btn btn-sm btn-warning btn-block">Buscar</button>
                                             </div>
                                           </div>
                                       </div>
@@ -60,7 +60,7 @@
                                           <div class="col-sm-4">
                                             <div class="form-group mb-0">
                                                 <label for="btnBuscarTienda" class="col-form-label col-form-label-sm invisible">Buscar:</label>
-                                                <button id="btnBuscarTienda" type="button" class="btn btn-sm btn-secondary btn-block">Buscar</button>
+                                                <button id="btnBuscarTienda" type="button" class="btn btn-sm btn-warning btn-block">Buscar</button>
                                             </div>
                                           </div>
                                       </div>
@@ -90,7 +90,7 @@
                                           <div class="col-sm-2">
                                             <div class="form-group mb-0">
                                                 <label for="btnBuscarTienda" class="col-form-label col-form-label-sm invisible">Buscar:</label>
-                                                <button id="btnBuscarProducto" type="button" class="btn btn-sm btn-secondary btn-block">Buscar</button>
+                                                <button id="btnBuscarProducto" type="button" class="btn btn-sm btn-warning btn-block">Buscar</button>
                                             </div>
                                           </div>
                                           <div class="col-sm-2">
@@ -119,7 +119,7 @@
                        <div class="row mt-2">
                            <div class="col-sm-12">
                                <div class="float-right">
-                                    <button id="btnAgregarCompra" class="btn btn-primary btn-sm float-right" ><i class="fa fa-plus-circle" aria-hidden="true"></i> Agregar a compra
+                                    <button id="btnAgregarCompra" class="btn btn-primary btn-sm float-right" ><i class="fas fa-plus-square" aria-hidden="true"></i> Agregar compra
                                     </button>
                                 </div>
                            </div>
@@ -133,7 +133,7 @@
                                     <table id="tbCompra" class="table table-striped table-bordered nowrap table-sm" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th></th>
+                                                <th>Accion</th>
                                                 <th>NIT Proveedor</th>
                                                 <th>NIT Tienda</th>
                                                 <th>Codigo Producto</th>
@@ -175,7 +175,7 @@
                   <table id="tbProveedor" class="table table-striped table-bordered nowrap compact">
                     <thead>
                       <tr>
-                          <th></th>
+                          <th>Opcion</th>
                           <th>NIT</th>
                           <th>Razon Social</th>
                           <th>Direccion</th>
@@ -205,7 +205,7 @@
                   <table id="tbTienda" class="table table-striped table-bordered nowrap compact">
                     <thead>
                       <tr>
-                          <th></th>
+                          <th>Opcion</th>
                           <th>NIT</th>
                           <th>Razón Social</th>
                           <th>Direccion</th>
@@ -235,7 +235,7 @@
                   <table id="tbProducto" class="table table-striped table-bordered nowrap compact">
                     <thead>
                       <tr>
-                          <th></th>
+                          <th>Opcion</th>
                           <th>Codigo</th>
                           <th>Nombre</th>
                           <th>Descripcion</th>

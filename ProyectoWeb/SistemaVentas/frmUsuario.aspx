@@ -6,9 +6,9 @@
         <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                <b> <center> <div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                    Administración Usuarios
-                  </center></div></b>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Informacion Usuarios</li>
+                        </ol>
                   <div class="card-body">
                         <div class="row">
                             <div class="col-sm-2">
@@ -28,7 +28,7 @@
                                             <th>Apellidos</th>
                                             <th>Correo</th>
                                             <th>Estado</th>
-                                            <th></th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -26,8 +26,9 @@ function cargarDatos() {
                         $("<td>").text(row.Telefono),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
-                            $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("tienda", row),
-                            $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("tienda", row.IdTienda)
+                            $("<button>").addClass("btn btn-sm btn-primary mr-1").data("tienda", row).append($("<i>").addClass("fas fa-marker")),
+                            $("<button>").addClass("btn btn-sm btn-danger").data("tienda", row.IdTienda).append($("<i>").addClass("far fa-trash-alt"))
+
                         )
                     ).appendTo("#tbTienda tbody");
                 })

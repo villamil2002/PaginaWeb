@@ -4518,16 +4518,20 @@ textarea.form-control-lg {
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.30rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4553,7 +4557,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 0rem 2rem;
 }
 
 .card-title {
@@ -4584,7 +4588,7 @@ textarea.form-control-lg {
 }
 
 .card-footer {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 4rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -11685,4 +11689,7 @@ body {
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
+}
+* {
+    font-family: Lucida Bright !important;
 }

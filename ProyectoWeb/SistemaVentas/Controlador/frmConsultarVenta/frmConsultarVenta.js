@@ -59,7 +59,8 @@ function CargarDatos() {
                 $.each(response.objeto, function (i, row) {
                     $("<tr>").append(
                         $("<td>").append(
-                            $("<button>").addClass("btn btn-sm btn-primary").text("Ver detalle").data("venta", row)
+                            $("<button>").addClass("btn btn-sm btn-danger").data("venta", row).append($("<i>").addClass("fas fa-print"))
+
                         ),
                         $("<td>").text(row.TipoDocumento),
                         $("<td>").text(row.Codigo),

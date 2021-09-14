@@ -32,7 +32,7 @@ function ObtenerTiendas() {
             $("#cboTienda").LoadingOverlay("hide");
             if (response.estado) {
 
-                $("<option>").attr({ "value": 0 }).text("-- Seleccionar todas --").appendTo("#cboTienda");
+                $("<option>").attr({ "value": 0 }).text("Seleccionar todos --").appendTo("#cboTienda");
 
                 $.each(response.objeto, function (i, row) {
                     if (row.Activo == true)

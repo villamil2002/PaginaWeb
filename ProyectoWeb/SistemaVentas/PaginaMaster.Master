@@ -81,21 +81,19 @@
 
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.aspx">VIKINGOS S.A</a>
+            <a class="navbar-brand ps-3" href="Inicio.aspx">VIKINGOS S.A</a>
             
             <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button class="btn btn-success btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <h4 class="navbar-brand ps-3" id="nombreusuario"></h4>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             </form>
             <h4 class="mt-4 navbar-brand ps-3" id="rolusuario"></h4>
-            <li class="mr-2"><a href="javascript:CerrarSesion();"><i><button type="button" class="btn btn-primary" style="background:#FFCE63; color:black">Salir</button></i></a></li>
+            <li class="mr-2"><a href="javascript:CerrarSesion();"><i><button type="button" class="btn btn-success">Salir</button></i></a></li>
             <!-- Navbar-->
-          
         </nav>
 
-    </div>
     <script src="Controlador/Utilidades.js"></script>
     <script src="Assets/Plugins/loadingoverlay/loadingoverlay.js"></script>
    
@@ -107,21 +105,7 @@
                         <div class="nav"/>
                         <nav>
                           <li class="sub-menu" id="menu"></li>
-                          <li class='sub-menu '><a class="nav-link dropdown-toggle" href='#'>Roles</a>
-                              <ul>
-                                  <a class="nav-link " href='#settings'>Account</a>
-                                  <a class="nav-link" href="index.html"> Fijar cargo</a>
-                              </ul>
-                          </li>
-                           <li class='sub-menu '><a class="nav-link" href='#'>Roles</a>
-                              <ul>
-                                  <a class="nav-link" href='#settings'>Account</a>
-                                  <a class="nav-link" href="index.html">
-                                  <div class="sb-nav-link-icon "><i class="fas fa-user-check"></i></div>
-                                  Fijar cargo
-                                </a>
-                              </ul>
-                          </li>
+                          
                        </nav>
                             <div class="sb-sidenav-footer">
                             <div class="small">Copyringh:</div>
@@ -131,13 +115,9 @@
             </div>
       
         <div id="layoutSidenav_content">
-                <main>
-                    
                     <div class="container-fluid">
                           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                           </asp:ContentPlaceHolder>
-    
-                </main>
                     </div>
         </div>
 
@@ -150,8 +130,8 @@
                         $("#menu").html();
                         
 
-                        $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-fill"));
-                        $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-shield-fill"));
+                        $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-check-fill"));
+                        $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-person-square"));
 
                         $.each(response.objeto.oListaMenu, function (i, menu) {
 
@@ -278,4 +258,4 @@
 
 </body>
 </html>
-html>
+
