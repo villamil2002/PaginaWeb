@@ -34,7 +34,7 @@
     <!-- JS DATATABLE -->
     <script src="Assets/Plugins/datatables/js/jquery.dataTables.min.js"></script>
     <script src="Assets/Plugins/datatables/js/dataTables.rowReorder.min.js"></script>
-    <script src="Assets/Plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <!--<script src="Assets/Plugins/datatables/js/dataTables.responsive.min.js"></script>-->
     <script src="Assets/Plugins/dataTables_checkboxes/js/dataTables.checkboxes.min.js"></script>
 
 
