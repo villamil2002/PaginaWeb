@@ -105,7 +105,7 @@
                 <td colspan="2" align="right">
                     <table style="font-weight: bold; width: 150px;">
                         <tr>
-                            <td>Total S/.</td>
+                            <td>Total $/.</td>
                             <td style="border:1px solid black;"><span id="totalcosto"></span></td>
                         </tr>
                     </table>

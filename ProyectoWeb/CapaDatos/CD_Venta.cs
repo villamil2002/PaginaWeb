@@ -86,9 +86,9 @@ namespace CapaDatos
                                                    {
                                                        TipoDocumento = dato.Element("TipoDocumento").Value,
                                                        Codigo = dato.Element("Codigo").Value,
-                                                       TotalCosto = float.Parse(dato.Element("TotalCosto").Value),
-                                                       ImporteRecibido = float.Parse(dato.Element("ImporteRecibido").Value),
-                                                       ImporteCambio = float.Parse(dato.Element("ImporteCambio").Value),
+                                                       TotalCosto = float.Parse(dato.Element("TotalCosto").Value)/100,
+                                                       ImporteRecibido = float.Parse(dato.Element("ImporteRecibido").Value)/100,
+                                                       ImporteCambio = float.Parse(dato.Element("ImporteCambio").Value)/100,
                                                        FechaRegistro = dato.Element("FechaRegistro").Value
                                                    }).FirstOrDefault();
                                 rptDetalleVenta.oUsuario = (from dato in doc.Element("DETALLE_VENTA").Elements("DETALLE_USUARIO")
@@ -117,8 +117,8 @@ namespace CapaDatos
                                                                       {
                                                                           Cantidad = int.Parse(producto.Element("Cantidad").Value),
                                                                           NombreProducto = producto.Element("NombreProducto").Value,
-                                                                          PrecioUnidad = float.Parse(producto.Element("PrecioUnidad").Value),
-                                                                          ImporteTotal = float.Parse(producto.Element("ImporteTotal").Value)
+                                                                          PrecioUnidad = float.Parse(producto.Element("PrecioUnidad").Value)/100,
+                                                                          ImporteTotal = float.Parse(producto.Element("ImporteTotal").Value)/100
                                                                       }).ToList();
                             }
                             else

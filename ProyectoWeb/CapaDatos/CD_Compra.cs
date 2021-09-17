@@ -82,7 +82,7 @@ namespace CapaDatos
                                                     select new Compra()
                                                     {
                                                         Codigo = dato.Element("Codigo").Value,
-                                                        TotalCosto = float.Parse(dato.Element("TotalCosto").Value),
+                                                        TotalCosto = float.Parse(dato.Element("TotalCosto").Value)/100,
                                                         FechaCompra = dato.Element("FechaCompra").Value
                                                     }).FirstOrDefault();
                                 rptDetalleCompra.oProveedor = (from dato in doc.Element("DETALLE_COMPRA").Elements("DETALLE_PROVEEDOR")
@@ -103,8 +103,8 @@ namespace CapaDatos
                                                                         {
                                                                             Cantidad = int.Parse(producto.Element("Cantidad").Value),
                                                                             oProducto = new Producto() { Nombre = producto.Element("NombreProducto").Value },
-                                                                            PrecioUnitarioCompra = float.Parse(producto.Element("PrecioUnitarioCompra").Value),
-                                                                            TotalCosto = float.Parse(producto.Element("TotalCosto").Value)
+                                                                            PrecioUnitarioCompra = float.Parse(producto.Element("PrecioUnitarioCompra").Value)/100,
+                                                                            TotalCosto = float.Parse(producto.Element("TotalCosto").Value)/100
                                                                         }).ToList();
                             }
                             else
@@ -156,7 +156,7 @@ namespace CapaDatos
                             oProveedor = new Proveedor() { RazonSocial = dr["RazonSocial"].ToString() },
                             oTienda = new Tienda() { Nombre = dr["Nombre"].ToString() },
                             FechaCompra = dr["FechaCompra"].ToString(),
-                            TotalCosto = float.Parse(dr["TotalCosto"].ToString())
+                            TotalCosto = float.Parse(dr["TotalCosto"].ToString())/100
                         });
                     }
                     dr.Close();
