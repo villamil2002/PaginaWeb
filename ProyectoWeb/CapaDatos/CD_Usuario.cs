@@ -288,6 +288,110 @@ namespace CapaDatos
         }
 
 
+        public string RecoveryUsuario(string email,string token)
+        {
+          //  string token = "";
+            bool respuesta = true;
+            using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
+            {
+                
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("select token_recovery from usuario where [[Correo]] = @email", oConexion);
+                    cmd.Parameters.AddWithValue("email", email);
+                    //cmd.ExecuteNonQuery();
+                    cmd.CommandType = CommandType.Text;
+
+                    oConexion.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    
+                    while (dr.Read()) 
+                    {
+                        token= dr["token_recovery"].ToString();
+                    }
+
+
+
+                    //respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
+
+                }
+                catch (Exception ex)
+                {
+                    respuesta = false;
+                }
+            }
+
+            return token;
+
+        }
+
+        public string RecoveryToken(string email, string token)
+        {
+            string filas="";
+
+            using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
+            {
+
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("update usuario set [token_recovery] = @token  where [Correo] = @email", oConexion);
+                    cmd.Parameters.AddWithValue("token", token);
+                    cmd.Parameters.AddWithValue("email", email);
+                    cmd.CommandType = CommandType.Text;
+                    oConexion.Open();
+                    filas = cmd.ExecuteNonQuery().ToString();                  
+
+
+                    //SqlDataReader dr = cmd.ExecuteReader();
+
+                    //respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
+
+                }
+                catch (Exception ex)
+                {
+                    filas = "0";
+                }
+            }
+
+            return filas;
+
+        }
+
+        public string ActualizarPass(string pass,string token)
+        {
+            string filas = "";
+
+            using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
+            {
+
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("update usuario set [Clave] = @pass  where [token_recovery] = @token", oConexion);
+                    cmd.Parameters.AddWithValue("pass", pass);
+                    cmd.Parameters.AddWithValue("token", token);
+                    cmd.CommandType = CommandType.Text;
+                    oConexion.Open();
+                    filas = cmd.ExecuteNonQuery().ToString();
+
+                    SqlCommand cmd1 = new SqlCommand("update usuario set [token_recovery] = (@token+7575)  where [token_recovery] = @token", oConexion);
+                    cmd1.Parameters.AddWithValue("token", token);
+                    cmd1.CommandType = CommandType.Text;
+                    oConexion.Open();
+                    filas = cmd.ExecuteNonQuery().ToString();
+                    //SqlDataReader dr = cmd.ExecuteReader();
+
+                    //respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
+
+                }
+                catch (Exception ex)
+                {
+                    filas = "0";
+                }
+            }
+
+            return filas;
+
+        }
 
     }
 

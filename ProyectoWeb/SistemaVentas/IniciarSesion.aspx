@@ -16,8 +16,7 @@
 </head>
 <body>
     <div id="login-button">
-        <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
-  </img>
+        <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png"/>
     </div>
 
     <div id="container">
@@ -43,12 +42,12 @@
     <div id="forgotten-container">
         <h1>Forgotten</h1>
         <span class="close-btn">
-            <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+            <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"/>
         </span>
 
         <form>
-            <input type="email" name="email" placeholder="E-mail">
-            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" class="orange-btn">Obtener nueva Contraseña</a>
+            <input type="email" name="email" id="email" placeholder="E-mail"/>
+            <a id="btnGenerarToken" href="#" class="orange-btn">Obtener nueva Contraseña</a>
         </form>
     </div>
     <!-- partial -->
@@ -64,5 +63,35 @@
     <link href="css/sweetalert.css" rel="stylesheet" />
     <script src="js/sweetalert.js"></script>
 
+    <script type="text/javascript">
+            $(document).ready(function () {
+                $('#btnGenerarToken').click(function (e) {
+                    e.preventDefault();
+                    if ($("#email").val() != "") {
+                        var request = { email: $("#email").val() }
+                        $.ajax({
+                            type: "POST",                                              // tipo de request que estamos generando
+                            url: 'IniciarSesion.aspx/Obtener',                    // URL al que vamos a hacer el pedido
+                            data: JSON.stringify(request),                                                // data es un arreglo JSON que contiene los parámetros que
+                            // van a ser recibidos por la función del servidor
+                            contentType: "application/json; charset=utf-8",            // tipo de contenido
+                            dataType: "json",                                          // formato de transmición de datos
+                            async: true,                                               // si es asincrónico o no
+                            success: function (resultado) {                            // función que va a ejecutar si el pedido fue exitoso
+                                var token = resultado.d;
+                                window.alert("Se le ha enviado un correo para recupear la contraseña");
+                                $('#lblToken').text('El token generado es : ' + token);
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) { // función que va a ejecutar si hubo algún tipo de error en el pedido
+                                var error = eval("(" + XMLHttpRequest.responseText + ")");
+                                alert(error.Message);
+                            }
+                        });
+                    } else {
+                        alert("Debe ingresar un correo valido");
+                    }
+                });
+            });
+    </script>
 </body>
 </html>

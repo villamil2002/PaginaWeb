@@ -3334,9 +3334,11 @@
     <Content Include="frmConsultarCompra.aspx" />
     <Content Include="frmConsultarVenta.aspx" />
     <Content Include="frmCrearVenta.aspx" />
+    <Content Include="frmNumeroAleatorio.aspx" />
     <Content Include="frmProducto.aspx" />
     <Content Include="frmProductoTienda.aspx" />
     <Content Include="frmProveedor.aspx" />
+    <Content Include="frmRecuperaClave.aspx" />
     <Content Include="frmRegistrarCompra.aspx" />
     <Content Include="frmRol.aspx" />
     <Content Include="frmRolPermiso.aspx" />
@@ -3427,6 +3429,13 @@
     <Compile Include="frmCrearVenta.aspx.designer.cs">
       <DependentUpon>frmCrearVenta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmNumeroAleatorio.aspx.cs">
+      <DependentUpon>frmNumeroAleatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNumeroAleatorio.aspx.designer.cs">
+      <DependentUpon>frmNumeroAleatorio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmProducto.aspx.cs">
       <DependentUpon>frmProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3447,6 +3456,13 @@
     </Compile>
     <Compile Include="frmProveedor.aspx.designer.cs">
       <DependentUpon>frmProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperaClave.aspx.cs">
+      <DependentUpon>frmRecuperaClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRecuperaClave.aspx.designer.cs">
+      <DependentUpon>frmRecuperaClave.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmRegistrarCompra.aspx.cs">
       <DependentUpon>frmRegistrarCompra.aspx</DependentUpon>

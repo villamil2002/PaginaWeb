@@ -19,8 +19,8 @@
     <AssociationLine Name="oUsuario" Type="CapaModelo.Usuario" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="12.375" Y="5.7" />
-        <Point X="12.375" Y="8.802" />
-        <Point X="10.5" Y="8.802" />
+        <Point X="12.375" Y="8.856" />
+        <Point X="10.5" Y="8.856" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="oProveedor" Type="CapaModelo.Proveedor" FixedFromPoint="true" FixedToPoint="true">
@@ -149,7 +149,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAIQAAAAAAAAUAEAAAIAAAIQAAIAgAIAQAAAAEAA=</HashCode>
+      <HashCode>AAAAAIQAAAAAAAAUAkAAAIAAAIQAAIAgAIAQAAAAEAA=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -166,10 +166,10 @@
       <Path>
         <Point X="15" Y="5.625" />
         <Point X="13.972" Y="5.625" />
-        <Point X="13.972" Y="9.651" />
-        <Point X="13.083" Y="9.651" Type="JumpStart" />
-        <Point X="12.917" Y="9.651" Type="JumpEnd" />
-        <Point X="10.5" Y="9.651" />
+        <Point X="13.972" Y="9.763" />
+        <Point X="13.083" Y="9.763" Type="JumpStart" />
+        <Point X="12.917" Y="9.763" Type="JumpEnd" />
+        <Point X="10.5" Y="9.763" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="oTienda" Type="CapaModelo.Tienda" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">

@@ -38,7 +38,7 @@
             <div class="col-sm-12">
                <div class="card">
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Colsultar Compras</li>
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Colsultar Ventas</li>
                         </ol>
                   <div class="card-body p-2">
                         <div class="row">
