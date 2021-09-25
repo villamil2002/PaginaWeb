@@ -2,6 +2,6 @@
 {
     public class Conexion
     {
-        public static string CN = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=VENSTORE;Integrated Security=True";
+        public static string CN = "Data Source=venstore-server.database.windows.net;Initial Catalog=venstore-database;User ID=venstore;Password=Desa$2021";
     }
 }

@@ -1,164 +1,355 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaster.Master" AutoEventWireup="true" CodeBehind="PaginaInicio.aspx.cs" Inherits="SistemaVentas.Inicio" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <link rel="stylesheet" href="Assets/Plugins/bootstrap.4.5.2/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="js/modernizr.custom.js"></script>
-    <style>
-body {
-    font-family: Arial;
-}
 
-        /* Style the tab */
-.tab1 {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+      <script src="js/modernizr.custom.js"></script>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+       
 
-            /* Style the buttons inside the tab */
-    .tab1 button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-        font-size: 17px;
-    }
-
-                /* Change background color of buttons on hover */
-        .tab1 button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab1 button.active {
-            background-color: #ccc;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-
-        /* Style the close button */
-        .topright {
-            float: right;
-            cursor: pointer;
-            font-size: 28px;
-        }
-
-        .topright:hover {
-            color: red;
-        }
-        header{
-   /* We want the header to have a static height, 
-   it will always take up just as much space as it needs.  */
-   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-   flex: 0 0 auto;
-}
-
-.main-content{
-   /* By setting flex-grow to 1, the main content will take up 
-   all of the remaining space on the page. 
-   The other elements have flex-grow: 0 and won't contest the free space. */
-   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
-   flex: 1 0 auto;
-}
-
-footer{
-   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
-   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-   flex: 0 0 auto;
-}
-
-footer div {
-    width: 100%;
-    height: 100px;
-    background-image:url(img/footer-background.jpg);
-    background-size: 100% 100%;
-    text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
-    color: white;
-}​
-</style>
-    <title>VIKINGOS S.A</title>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-<div class="container">
-    <nav>
-            <p>
-                <img src="img/Logo_Venstore.PNG" align="right" style="width: 10%; height: 20%;">
-                <center>
-                    <h1 style="font-size: 300%; color:black; background: #FFCE63; font-family: Arial Rounded MT Bold">VIKINGOS S.A</h1>
-                </center>
-            </p>
-        </nav>
-
-        <br>
-        <br>
-
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/desktop-vs-laptop.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/ventas02.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/ventas04.jpg" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/ventas03.jpg" alt="Third slide">
+      <body id="page-top">
+      
+       
+        <!-- Portafolio Grid-->
+        <section class="page-section bg-light" id="portfolio" style="margin-top: 5%">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Informacion General</h2>
+                </div><br />
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Reportes item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="img/portfolio/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Ventas</div>
+                                <div class="portfolio-caption-subheading text-muted">Ilustracion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="img/portfolio/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Compras</div>
+                                <div class="portfolio-caption-subheading text-muted">Informacion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="img/portfolio/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Administrador</div>
+                                <div class="portfolio-caption-subheading text-muted">Ilustracion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="img/portfolio/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Empleado</div>
+                                <div class="portfolio-caption-subheading text-muted">Ilustracion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="img/portfolio/5.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Repor-Venta</div>
+                                <div class="portfolio-caption-subheading text-muted">Reporte</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="img/portfolio/6.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Repor-Compra</div>
+                                <div class="portfolio-caption-subheading text-muted">Reporte</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+        </section><br />
+       
+        <!-- Footer-->
+       <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Star Bootstrap 2021</div>
+                            <div>
+                                Privacy Policy
+                                &middot;
+                                Gaes 02 : Version 01
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <center><h2 class="text-uppercase" >Ventas</h2>
+                                    <p class="item-intro text-muted">Podra generar los reportes de las ventas realizadas</p></center>
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/1.jpg" alt="..." /><br />
+                                    <p style=" text-align: justify">Aqui podras crear las Ventas que se realicen todos los dias en el negocio, gracias a esto se llevara la contabilidad necesaria para que se encuentre una estabilidad en las cuentas de la empresa.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Realiza : </strong>
+                                           El Administrador o por el Empleado si se le brinda acceso.
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Informacion
+                                        </li>
+                                    </ul>
+                                    <center><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Cerrar
+                                    </button></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-         <p align="justify">
-            "Ayudanos a ser mejores ven a visitarnos, conoceras nuestros mejores productos, lo mas nuevo lo mas original de este año solo para tu telefono movil"
-  	        Un proceso de ventas es un nada más que un modelo de reglas, acciones y actividades, utilizadas por todos los involucrados del área comercial y que contenga las siguientes características:<br>
-            Educativo: capaz de ser enseñado a los involucrados, pudiendo ser utilizado por cualquiera del área;
-	        Tenemos un accion en nuestras ventas con la calidad de brindarle a nuestros clientes lo que necesitan para ssus dispositivos tecnologicos.<br>
-            Es claro que, en función del segmento (tecnología, educación, retail), modelo de ventas (venda directa, self service, e commerce, mayorista), público objetivo (B2B, B2C, B2B2C), la forma con las que se parametrizan las características anteriores varía, para que el modelo sea eficiente. No obstante, el concepto es aplicable en cualquier empresa con enfoque en crecimiento escalable.<br>
-            Las principales razones para que se desarrolle un proceso claro y definido, en general, es hacer un rump up de los vendedores de forma más rápida, entrenar el equipo de ventas, ayudar al vendedor a evolucionar en sus resultados, aumentar la eficiencia comercial y escalar un equipo.
-            <br>
-            En suma, podríamos pensar en la creación del proceso con base en 4 principales pilares:<br/>
-            <li>Definición de las etapas de venta</li>
-            <li> Definición de los deberes del departamento de ventas </li>
-            <li> Establecimiento de indicadores de ventas y niveles ideales de trabajo</li>
-            <li> Formalización de las informaciones del proceso creado</li>
-          
-        </p>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <center><h2 class="text-uppercase">Reportes por Tiendas</h2>
+                                    <p class="item-intro text-muted">Encontraras los reportes de todo los productos en cada una de las tiendas que se manejen</p></center>
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/2.jpg" alt="..." />
+                                    <p style=" text-align: justify">Los productos que se encuentran estaran divididos en categorias y en cada tienda dependiendo de las que se esten manejando. </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Quien lo realiza :</strong>
+                                            Administrador
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Reporte
+                                        </li>
+                                    </ul>
+                                    <center><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                      Cerrar reporte
+                                    </button></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <center><h2 class="text-uppercase">Reportes de Compras</h2>
+                                    <p class="item-intro text-muted">Podras generar los reportes en el tiempo que lo desee</p></center>
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/3.jpg" alt="..." />
+                                    <p style=" text-align: justify">Ingresando al modulo de Compras tendra la opcion de generar el reporte de las compras que se hayan realizado en cualquier tiempo determinado</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Quien lo genera :</strong>
+                                           Administrador
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Reporte
+                                        </li>
+                                    </ul>
+                                    <center><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Cerrar reportes
+                                    </button></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <center><h2 class="text-uppercase">Detalle de venta</h2>
+                                    <p class="item-intro text-muted">Podra obtener una factura de la venta</p></center>
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/4.jpg" alt="..." />
+                                    <p style=" text-align: justify">Al realizar una venta usted tendra la opcion de generar un detalle de la venta en caso de que el cliente le pida uno</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Quien lo realiza :</strong>
+                                            Administrador
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Detalle
+                                        </li>
+                                    </ul>
+                                    <center><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Cerrar detalle
+                                    </button></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <center><h2 class="text-uppercase">Detalle de compras</h2>
+                                    <p class="item-intro text-muted">Podra generar un detalle de la compra.</p></center>
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/5.jpg" alt="..." />
+                                    <p style=" text-align: justify">Al realizar una compra, usted podra buscra las compras realizadas, y encontrara el detalle tipo factura, donde tendra la informacion del proveedor</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Lo realiza : </strong>
+                                            Administrador
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Detalle
+                                        </li>
+                                    </ul>
+                                    <center><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Cerrar detalle
+                                    </button></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <center><h2 class="text-uppercase">Nuestros clientes</h2>
+                                    <p class="item-intro text-muted">Las mejores opciones</p></center>
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/6.jpg" alt="..." />
+                                    <p style=" text-align: justify">Nuestros clientes son lo mas importante para nosotros por eso tendremos varias ofertas, ademas de eso excelente garantia en todos nuestros productos.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Para :</strong>
+                                            Nuestros Clientes
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Servicios
+                                        </li>
+                                    </ul>
+                                   <center><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Cerrar detalle
+                                    </button></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scriptsInicio.js"></script>
 
-</div>
-
-
-<footer class="footer">
-
-
-	<div class="izquierda">
-		<center>
-			VIKINGOS SA-TPS-2233423
-             <p>Autor: Gaes 02<br>
-  <a href="https://www.google.com/intl/es-419/gmail/about/">vikingos_S.A_@gmail.com</a></p>
-		</center>
-	</div>
-</footer>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </asp:Content>

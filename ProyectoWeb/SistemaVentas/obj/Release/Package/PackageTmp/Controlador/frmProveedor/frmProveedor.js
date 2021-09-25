@@ -28,8 +28,11 @@ function cargarDatos() {
                         $("<td>").text(row.Direccion),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
-                            $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("proveedor", row),
-                            $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("proveedor", row.IdProveedor)
+                            //$("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("proveedor", row),
+                            //$("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("proveedor", row.IdProveedor)
+                            $("<button>").addClass("btn btn-sm btn-primary mr-1").data("proveedor", row).append($("<i>").addClass("fas fa-marker")),
+                            $("<button>").addClass("btn btn-sm btn-danger").data("proveedor", row.IdProveedor).append($("<i>").addClass("far fa-trash-alt"))
+
                         )
                     ).appendTo("#tbProveedor tbody");
 

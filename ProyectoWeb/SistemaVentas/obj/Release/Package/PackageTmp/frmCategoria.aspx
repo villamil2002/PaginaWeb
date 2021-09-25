@@ -5,9 +5,9 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                 <center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                   <b> Administración Categorias</b>
-                  </div></center>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Categoria</li>
+                        </ol>
                   <div class="card-body">
                         <div class="row">
                             <div class="col-sm-2">
@@ -23,7 +23,7 @@
                                             <th>#</th>
                                             <th>Descripcion</th>
                                             <th>Estado</th>
-                                            <th></th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>

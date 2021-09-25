@@ -13,14 +13,15 @@
                <div class="card">
                   <div class="card-header">
                     <div class="row">
-                        <div class="col-sm-10" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'; font-size:x-large"><b>
-                          <label>Administración de Permisos</label>
-                       </b> </div>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black";font-size:150%;>Administrador de permisos</li>
+                        </ol>
+
                         <div class="col-sm-2 float-right">
-                          <button id="btnGuardarCambios" class="btn btn-sm btn-success">Guardar Cambios</button>
-                         </div>
-                      </div>
-                      </div>
+                          <button id="btnGuardarCambios" class="btn btn-sm btn-success" >Guardar Cambios</button>
+                        </div>
+               </div>
+            </div><br />
                   <div class="card-body">
                         <div class="row">
                             <div  class="col-sm-2">

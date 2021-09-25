@@ -60,7 +60,8 @@ function cargarProveedor() {
                     if (row.Activo == true) {
                         $("<tr>").append(
                             $("<td>").append(
-                                $("<button>").addClass("btn btn-sm btn-primary ml-2").text("Seleccionar").data("proveedor", row)
+                                $("<button>").addClass("btn btn-sm btn-primary ml-2").data("proveedor", row).append($("<i>").addClass("far fa-hand-pointer"))
+
                             ),
                             $("<td>").text(row.NIT),
                             $("<td>").text(row.RazonSocial),
@@ -98,7 +99,8 @@ function cargarTiendas() {
                     if (row.Activo == true) {
                         $("<tr>").append(
                             $("<td>").append(
-                                $("<button>").addClass("btn btn-sm btn-primary ml-2").text("Seleccionar").data("tienda", row)
+                                $("<button>").addClass("btn btn-sm btn-primary ml-2").data("tienda", row).append($("<i>").addClass("far fa-hand-pointer"))
+
                             ),
                             $("<td>").text(row.NIT),
                             $("<td>").text(row.Nombre),
@@ -139,7 +141,8 @@ function cargarProductos() {
                     if (row.Activo == true) {
                         $("<tr>").append(
                             $("<td>").append(
-                                $("<button>").addClass("btn btn-sm btn-primary ml-2").text("Seleccionar").data("producto", row)
+                                $("<button>").addClass("btn btn-sm btn-primary ml-2").data("producto", row).append($("<i>").addClass("far fa-hand-pointer"))
+
                             ),
                             $("<td>").text(row.Codigo),
                             $("<td>").text(row.Nombre),
@@ -268,7 +271,8 @@ $('#btnAgregarCompra').on('click', function () {
     if (!existe_codigo) {
         $("<tr>").append(
             $("<td>").append(
-                $("<button>").addClass("btn btn-danger btn-sm").text("Eliminar")
+                $("<button>").addClass("btn btn-danger btn-sm").append($("<i>").addClass("far fa-trash-alt"))
+
             ),
             $("<td>").append($("#txtRucProveedor").val()),
             $("<td>").append($("#txtRucTienda").val()),

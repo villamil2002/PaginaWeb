@@ -75,7 +75,7 @@
                                             <th style="width: 15%;">Cantidad</th>
                                             <th style="width: 45%;">Descripcion</th>
                                             <th style="width: 20%;">P.Unit</th>
-                                            <th style="width: 20%;">Importe</th>
+                                            <th style="width: 20%;">Total</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -88,9 +88,9 @@
                             <td colspan="4">
                                 <table width='250' border='1'>
                                     <tr style='border:1px solid black;'>
-                                        <td bgcolor='#D9D9D9'>Pago con S/.</td>
+                                        <td bgcolor='#D9D9D9'>Pago </td>
                                         <td><span id="importerecibido"></span></td>
-                                        <td bgcolor='#D9D9D9'>Cambio S/.</td>
+                                        <td bgcolor='#D9D9D9'>Cambio </td>
                                         <td><span id="importecambio"></span></td>
                                     </tr>
                                 </table>
@@ -98,7 +98,7 @@
                             <td colspan="2" align="right">
                                 <table style="font-weight: bold; width: 150px;">
                                     <tr>
-                                        <td>Total S/.</td>
+                                        <td>Total</td>
                                         <td bgcolor="#D9D9D9" style="border:1px solid black;"><span id="totalcosto"></span></td>
                                     </tr>
                                 </table>

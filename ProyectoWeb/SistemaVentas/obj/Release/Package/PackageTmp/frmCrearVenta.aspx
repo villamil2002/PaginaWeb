@@ -58,11 +58,11 @@
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header p-2"  style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Registra Nueva Venta
+                  <div class="card-header p-2"  style="font-size:130%; font-family:'Comic Sans MS'">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Registrar Venta
 
                       <div class="float-right">
-                          <button id="btnTerminarGuardarVenta" class="btn-custom btn-primary btn-sm-custom float-right" style="color:black; background:#E3E3D5 "><i class="fa fa-print" aria-hidden="true"></i> Imprimir y Terminar Venta
+                          <button id="btnTerminarGuardarVenta" class="btn-custom btn-secundary btn-sm-custom float-right"><i class="fa fa-print" aria-hidden="true"></i> Imprimir y Terminar 
                           </button>
                       </div>
                   </div>
@@ -74,7 +74,7 @@
                                      <label class="input-group-text" for="inputGroupSelect01">Tipo Documento</label>
                                   </div>
                                   <select class="custom-select" id="cboventatipodocumento">
-                                    <option value="Boleta">Boleta</option>
+                                    <option value="Comprobante">Comprobante</option>
                                     <option value="Factura">Factura</option>
                                   </select>
                                 </div>
@@ -90,15 +90,15 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="card" style="background-color: #F7F7F7">
-                                  <div class="card-body p-2" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
+                                <div class="card">
+                                  <div class="card-body p-2">
                                       <div class="row">
                                           <div class="col-sm-10">
-                                              <h6 class="card-title mb-1">Tienda origen</h6>
+                                              <h6 class="card-title mb-1">Tienda</h6>
                                           </div>
                                           <div class="col-sm-2">
                                               <div class="float-right">
-                                                  <a class="btn btn-secondary btn-sm" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                  <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                       <i class="fa fa-sort" aria-hidden="true"></i>
                                                     </a>
                                               </div>
@@ -131,16 +131,16 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="card" style="background-color: #F7F7F7">
-                                  <div class="card-body p-2" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
+                                <div class="card" >
+                                  <div class="card-body p-2">
                                       
                                       <div class="row" >
                                           <div class="col-sm-10">
-                                              <h6 class="card-title mb-1">Datos Empleado</h6>
+                                              <h6 class="card-title mb-1">Info. Empleado</h6>
                                           </div>
                                           <div class="col-sm-2">
                                               <div class="float-right">
-                                                  <a class="btn btn-secondary btn-sm" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                  <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                       <i class="fa fa-sort" aria-hidden="true"></i>
                                                     </a>
                                               </div>
@@ -184,8 +184,8 @@
                                             <div class="form-group mb-0">
                                               <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Tipo Documento:</label>
                                               <select class="form-control form-control-sm model" id="cboclientetipodocumento" name="Rol">
-                                                  <option value="DNI">DNI</option>
-                                                  <option value="Carnet Extranjeria">Carnet Extranjeria</option>
+                                                  <option value="CC">CC</option>
+                                                  <option value="Carnet Extranjeria">TARGETA IDENTIDAD</option>
                                                   <option value="NIT">NIT</option>
                                               </select>
                                             </div>
@@ -247,7 +247,7 @@
                                           <div class="col-sm-2">
                                               <div class="form-group mb-0">
                                                   <label for="btnBuscarProducto" class="col-form-label col-form-label-sm invisible">Buscar:</label>
-                                                  <button id="btnBuscarProducto" type="button" class="btn btn-sm btn-secondary btn-block">Buscar</button>
+                                                  <button id="btnBuscarProducto" type="button" class="btn btn-sm btn-primary btn-block">Buscar</button>
                                               </div>
                                           </div>
                                       </div>
@@ -290,12 +290,12 @@
                                     <table id="tbVenta" class="table table-striped table-bordered nowrap table-sm" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th></th>
+                                                <th>Accion</th>
                                                 <th>Cantidad</th>
                                                 <th>Producto</th>
                                                 <th>Descripcion</th>
                                                 <th>Precio Unidad</th>
-                                                <th>Importe Total</th>
+                                                <th>Total</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -313,7 +313,7 @@
                                   <div class="col-sm-4">
                                         <div class="input-group input-group-sm mb-2">
                                           <div class="input-group-prepend">
-                                             <label class="input-group-text" for="inputGroupSelect01">Sub Total S/.</label>
+                                             <label class="input-group-text" for="inputGroupSelect01">Sub Total</label>
                                           </div>
                                           <input id="txtsubtotal" readonly type="text" class="form-control" value="0" >
                                         </div>
@@ -321,7 +321,7 @@
                                   <div class="col-sm-4">
                                         <div class="input-group input-group-sm mb-2">
                                           <div class="input-group-prepend">
-                                             <label class="input-group-text" for="inputGroupSelect01">IVA S/.</label>
+                                             <label class="input-group-text" for="inputGroupSelect01">IVA </label>
                                           </div>
                                           <input id="txtiva" readonly type="text" class="form-control" value="0" >
                                         </div>
@@ -329,7 +329,7 @@
                                   <div class="col-sm-4">
                                         <div class="input-group input-group-sm mb-2">
                                           <div class="input-group-prepend">
-                                             <label class="input-group-text" for="inputGroupSelect01">Total S/.</label>
+                                             <label class="input-group-text" for="inputGroupSelect01">Total</label>
                                           </div>
                                           <input id="txttotal" readonly type="text" class="form-control" value="0" >
                                         </div>
@@ -341,7 +341,7 @@
                                   <div class="col-sm-4">
                                         <div class="input-group input-group-sm mb-2">
                                           <div class="input-group-prepend">
-                                             <label class="input-group-text" for="inputGroupSelect01">Monto Pago S/.</label>
+                                             <label class="input-group-text" for="inputGroupSelect01">Monto de Pago</label>
                                           </div>
                                           <input id="txtmontopago" type="text" class="form-control" autocomplete="off" >
                                         </div>
@@ -352,7 +352,7 @@
                                   <div class="col-sm-4">
                                         <div class="input-group input-group-sm mb-2">
                                           <div class="input-group-prepend">
-                                             <label class="input-group-text" for="inputGroupSelect01">Cambio S/.</label>
+                                             <label class="input-group-text" for="inputGroupSelect01">Cambio</label>
                                           </div>
                                           <input id="txtcambio" readonly type="text" class="form-control" >
                                         </div>

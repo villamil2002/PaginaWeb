@@ -24,8 +24,9 @@ function cargarDatos() {
                         $("<td>").text(row.Descripcion),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
-                            $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("rol", row),
-                            $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("rol", row.IdRol)
+                            $("<button>").addClass("btn btn-sm btn-primary mr-1").data("rol", row).append($("<i>").addClass("fas fa-marker")),
+                            $("<button>").addClass("btn btn-sm btn-danger").data("rol", row.IdRol).append($("<i>").addClass("far fa-trash-alt"))
+                            
                         )
                     ).appendTo("#tbrol tbody");
 

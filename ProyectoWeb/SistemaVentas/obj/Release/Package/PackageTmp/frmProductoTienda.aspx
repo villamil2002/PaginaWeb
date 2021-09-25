@@ -7,13 +7,18 @@
             <div class="col-sm-12"">
                 <div class="mb-3" id="accordion">
                   <div class="card">
-                    <div class="card-header p-2" id="headingOne" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                        <label>Asignar Productos a Tienda</label>
+                       <div class="col-sm-12"">
+                <div class="mb-3" id="accordion">
+                  <div class="card">
+                    <div class="card-header p-2" id="headingOne" style="font-size:150%; font-family:'Comic Sans MS'">
+                        <label>Productos a Tiendas</label>
+                        
                         <div class="float-right">
-                            <button  style="background-color: black" class="btn btn-secondary btn-sm float-right" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne"><i class="fa fa-bars" aria-hidden="true"></i>
+                            <button  class="btn btn-secondary btn-sm float-right" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne"><i class="fa fa-bars" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
+                    
 
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body p-3">
@@ -93,14 +98,14 @@
 
 
                <div class="card">
-                  <b><center><div class="card-header" style="background-color:#FFCE63; font-size:150%; font-family:'Comic Sans MS'">
-                    Lista de Asignaciones
-                  </div></center></b>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active" style=" font-size:150%; font-family:'Times New Roman'; color:black">Lista de Asignacion</li>
+                        </ol>
                   <div id="card-lista" class="card-body p-3">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="table-responsive">
-                                    <table id="tbProductoTienda" class="table compact table-bordered" style="width:100%">
+                                    <table id="tbProductoTienda" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>Nombre Tienda</th>
@@ -108,7 +113,7 @@
                                                 <th>Codigo Producto</th>
                                                 <th>Nombre Producto</th>
                                                 <th>Stock</th>
-                                                <th></th>
+                                                <th>Accion</th>
                                             </tr>
                                         </thead>
                                         <tbody>

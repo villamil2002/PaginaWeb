@@ -11,7 +11,7 @@ namespace SistemaVentas
 {
     public partial class IniciarSesion : System.Web.UI.Page
     {
-		static string urlDomain = "http://localhost:62410/";
+		static string urlDomain = "https://sistemaventa.azurewebsites.net/";
 		protected void Page_Load(object sender, EventArgs e)
         {
 

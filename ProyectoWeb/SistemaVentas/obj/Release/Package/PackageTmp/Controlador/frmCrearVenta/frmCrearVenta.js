@@ -266,6 +266,7 @@ $('#btnTerminarGuardarVenta').on('click', function () {
     });
 
 
+
     VENTA = "<VENTA>" +
         "<IdTienda>" + $("#txtIdTienda").val() + "</IdTienda>" +
         "<IdUsuario>" + $("#txtIdUsuario").val() + "</IdUsuario>" +
@@ -297,10 +298,10 @@ $('#btnTerminarGuardarVenta').on('click', function () {
             $(".card-venta").LoadingOverlay("hide");
             if (response.estado) {
                 //DOCUMENTO
-                $("#cboventatipodocumento").val("Boleta");
+                $("#cboventatipodocumento").val("COMPROBANTE");
 
                 //CLIENTE
-                $("#cboclientetipodocumento").val("DNI");
+                $("#cboclientetipodocumento").val("CC");
                 $("#txtclientedocumento").val("");
                 $("#txtclientenombres").val("");
                 $("#txtclientedireccion").val("");

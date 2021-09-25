@@ -8,13 +8,16 @@
     <title>VIKINGOS S.A</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link href="Assets/Plugins/bootstrap.4.5.2/bootstrap.min.css" rel="stylesheet" />
+    
     <link href="Assets/Plugins/sweetalert2/sweetalert.css" rel="stylesheet" />
     <link href="Assets/Plugins/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
     <link href="Assets/Plugins/bootstrap-icons-1.2.2/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="Assets/Plugins/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
 
     <link href="Assets/Plugins/datatables-buttons/css/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="Administracion/css/styles.css" rel="stylesheet" />
 
     <script src="Assets/Plugins/jquery/jquery.3.5.1.min.js"></script>
     <script src="Assets/Plugins/bootstrap.4.5.2/bootstrap.min.js"></script>
@@ -31,18 +34,19 @@
     <!-- JS DATATABLE -->
     <script src="Assets/Plugins/datatables/js/jquery.dataTables.min.js"></script>
     <script src="Assets/Plugins/datatables/js/dataTables.rowReorder.min.js"></script>
-    <script src="Assets/Plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <!--<script src="Assets/Plugins/datatables/js/dataTables.responsive.min.js"></script>-->
     <script src="Assets/Plugins/dataTables_checkboxes/js/dataTables.checkboxes.min.js"></script>
 
 
     <script src="Assets/Plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
 
-        <script src="Assets/Plugins/datatables-buttons/js/buttons.flash.min.js"></script>
+    <script src="Assets/Plugins/datatables-buttons/js/buttons.flash.min.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/jszip.min.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/pdfmake.min.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/vfs_fonts.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="Assets/Plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    
 
 
     <script src="Assets/Plugins/jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -53,66 +57,102 @@
         }
     </style>
 
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="Administracion/css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+        <script src="Administracion/js/scripts.js"></script>
+  
+        <script src="Administracion/assets/demo/chart-area-demo.js"></script>
+        <script src="Administracion/assets/demo/chart-bar-demo.js"></script>
+     
+        <script src="Administracion/js/datatables-simple-demo.js"></script>
+   
+
   <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-      <a style="color: #FFCE63;" class="navbar-brand" href="javascript:void(0)">VIKINGOS S.A</a>
-      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body class="sb-nav-fixed">
 
-      <div class="navbar-collapse collapse" id="navb" style="">
-        <ul id="menu" class="navbar-nav mr-auto">
-          
-        </ul>
-        <ul class="nav navbar-nav navbar-right" style="color:#fff">
-          <li class="mr-4"><label id="nombreusuario"></label></li>
-          <li class="mr-4"><label id="rolusuario"></label></li>
-          <li class="mr-2"><a href="javascript:CerrarSesion();"><i><button type="button" class="btn btn-primary" style="background:#FFCE63; color:black">Salir</button></i></a></li>
-        </ul>
-      </div>
-    </nav>
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="Inicio.aspx">VIKINGOS S.A</a>
+            
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-success btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <h4 class="navbar-brand ps-3" id="nombreusuario"></h4>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            </form>
+            <h4 style="padding-bottom: 2rem" class="mt-4 navbar-brand ps-3" id="rolusuario"></h4>
+            <li style="position: static" class="mr-2"><a href="javascript:CerrarSesion();"><i><button type="button" class="btn btn-success">Salir</button></i></a></li>
+            <!-- Navbar-->
+        </nav>
 
-    <div class="container-fluid">
-      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-      </asp:ContentPlaceHolder>
-    </div>
     <script src="Controlador/Utilidades.js"></script>
     <script src="Assets/Plugins/loadingoverlay/loadingoverlay.js"></script>
-    <script>
-        $(document).ready(function () {
+   
+    
+         <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav"/>
+                        <nav>
+                          <li class="sub-menu" id="menu"></li>
+                          
+                       </nav>
+                            <div class="sb-sidenav-footer">
+                            <div class="small">Copyringh:</div>
+                             Start Bootstrap
+                   </div>
+                </nav>
+            </div>
+      
+        <div id="layoutSidenav_content">
+                    <div class="container-fluid">
+                          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                          </asp:ContentPlaceHolder>
+                    </div>
+        </div>
 
-
+<script>
+     $(document).ready(function () {
             AjaxGet("../Inicio.aspx/ObtenerDetalleUsuario",
                 function (response) {
                     if (response.estado) {
-
-                        $("#menu").html("");
+                     
+                        $("#menu").html();
                         
-                        $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-fill"));
-                        $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-shield-fill"));
+
+                        $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-check-fill"));
+                        $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-person-square"));
 
                         $.each(response.objeto.oListaMenu, function (i, menu) {
 
                             var li = null;
                             var div = null;
-                            li = $("<li>").addClass("nav-item dropdown").append(
-                                $("<a>").addClass("nav-link dropdown-toggle").attr({ "href": "#", "data-toggle": "dropdown" }).append(
-                                    "<i class='" + menu.Icono + "' aria-hidden='true'></i>" +" " + menu.Nombre
-                                )
+                            li = $("<li>").addClass("sub-menu").append(
+                                $("<a>").addClass("nav-link dropdown-toggle").attr({ "href": "#"}).append(
+                                    "<i class='" + menu.Icono + "' aria-hidden='true'></i>" + " " + menu.Nombre)
                             );
-                            div = $("<div>").addClass("dropdown-menu");
+                            div = $("<ul>").addClass();
 
                             $.each(menu.oSubMenu, function (x, submenu) {
                                 if (submenu.Activo) {
+                                 //   div = $("<a>").addClass("nav-link").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(submenu.Nombre)
                                     div.append(
-                                        $("<a>").addClass("dropdown-item").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(
-                                            "<i class='fa fa-caret-right' aria-hidden='true'></i>" + " " + submenu.Nombre
+                                        $("<a>").addClass("nav-link").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(
+                                            submenu.Nombre
                                         )
-                                )
+                                    )
                                 }
-                                
+
                             })
 
                             li.append(div);
@@ -141,7 +181,81 @@
                 function () {
                 })
         }
-    </script>
-    
+</script>
+
+<script>
+  /*  $(document).ready(function () {
+
+
+        AjaxGet("../Inicio.aspx/ObtenerDetalleUsuario",
+            function (response) {
+                if (response.estado) {
+
+                    $("#menu").html("");
+
+                    $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-fill"));
+                    $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-shield-fill"));
+
+                    $.each(response.objeto.oListaMenu, function (i, menu) {
+
+                        var li = null;
+                        var div = null;
+                        li = $("<li>").addClass("nav-item dropdown").append(
+                            $("<a>").addClass("nav-link dropdown-toggle").attr({ "href": "#", "data-toggle": "dropdown" }).append(
+                                "<i class='" + menu.Icono + "' aria-hidden='true'></i>" + " " + menu.Nombre
+                            )
+                        );
+                        div = $("<div>").addClass("dropdown-menu");
+
+                        $.each(menu.oSubMenu, function (x, submenu) {
+                            if (submenu.Activo) {
+                                div.append(
+                                    $("<a>").addClass("dropdown-item").attr({ "href": submenu.NombreFormulario + ".aspx" }).append(
+                                        "<i class='fa fa-caret-right' aria-hidden='true'></i>" + " " + submenu.Nombre
+                                    )
+                                )
+                            }
+
+                        })
+
+                        li.append(div);
+                        li.appendTo("#menu");
+                    })
+                } else {
+                    window.location.href = 'IniciarSesion.aspx';
+                }
+            },
+            function () {
+            },
+            function () {
+            })
+
+    })
+    function CerrarSesion() {
+        AjaxGet("../Inicio.aspx/CerrarSesion",
+            function (response) {
+                if (response.estado) {
+                    window.location.href = 'IniciarSesion.aspx';
+                } else {
+                }
+            },
+            function () {
+            },
+            function () {
+            })
+    }*/
+</script>
+
+
+<script>
+    $('.sub-menu ul').hide();
+    $(".sub-menu a").click(function () {
+        $(this).parent(".sub-menu").children("ul").slideToggle("100");
+        $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+    });
+</script>
+
+
 </body>
 </html>
+
